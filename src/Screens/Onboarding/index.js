@@ -80,9 +80,9 @@ const OnboardingScreens = () => {
                         label={activeIndex === 2 ? labels.GetStarted : labels.Next}
                         onPress={() => activeIndex === 2 ? navigate('SignIn') : sliderRef.current?.goToSlide(activeIndex + 1, true)}
                     />
-                    <View style={styles.haveAccountContainer}>
+                    <TouchableOpacity activeOpacity={0.8} onPress={() => navigate('SignUp')} style={styles.haveAccountContainer}>
                         <Text style={styles.haveAccountText}>{labels.DontHaveAnAccount}<Text style={styles.signUpText}>{" "+labels.SignUp}</Text></Text>
-                    </View>
+                    </TouchableOpacity>
                 </View>
             </SafeAreaView>
         </View>

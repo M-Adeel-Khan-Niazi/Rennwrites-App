@@ -55,7 +55,7 @@ const SignUp = ({ navigation }) => {
                         <TextInputComp placeholder={labels.Password} showPassword={showPassword} showEye={true} onShowEye={() => setShowPassword(!showPassword)} />
                         <TextInputComp placeholder={labels.ConfirmPassword} showPassword={showConfPassword} showEye={true} onShowEye={() => setShowConfPassword(!showConfPassword)} />
                         <Button
-                            label={labels.SignIn}
+                            label={labels.SignUp}
                             containerStyle={styles.buttonContainer}
                         />
                         <TouchableOpacity activeOpacity={0.8} onPress={() => navigate('SignIn')} style={styles.haveAccountContainer}>

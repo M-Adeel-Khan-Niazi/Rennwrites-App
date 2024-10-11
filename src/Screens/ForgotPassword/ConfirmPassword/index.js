@@ -31,7 +31,7 @@ const ForgotPasswordConfirmPassScreen = ({ navigation }) => {
                     <Button
                         label={labels.Submit}
                         containerStyle={styles.bottonContainer}
-                        onPress={() => navigate('ForgotPasswordOTPScreen')}
+                        // onPress={() => navigate('ForgotPasswordOTPScreen')}
                     />
                 </View>
             </View>
