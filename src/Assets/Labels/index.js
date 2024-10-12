@@ -19,7 +19,19 @@ const labels = {
     Submit: 'Submit',
     Resend: 'Resend',
     HavenReceivedCode: 'Haven’t Received Code',
-    ResetPassword: 'Reset Password'
+    ResetPassword: 'Reset Password',
+    Home: 'Home',
+    Chatbot: 'Chat bot',
+    Browse: 'Browse',
+    shop: 'Shop',
+    ContinueReading: "Continue Reading",
+    ViewAll: "View All",
+    Completed:'Completed',
+    RecommendedForYou: 'Recommended For You',
+    AudioBooks: 'Audio Books',
+    TrendingBooks: 'Trending Books',
+    SubscribeNowForAMonthlyDoseOfWellnessCulturalTreasures: 'Subscribe now for a Monthly dose of wellness & cultural treasures',
+    Subscribe: 'Subscribe'
   }
 
   export default labels;

@@ -33,7 +33,7 @@ const SignIn = ({ navigation }) => {
                     </View>
                     <Button
                         label={labels.SignIn}
-                        // onPress={() =>navigate('SignUp')}
+                        onPress={() =>navigate('TabStack')}
                     />
                     <TouchableOpacity activeOpacity={0.8} onPress={() =>navigate('SignUp')} style={styles.haveAccountContainer}>
                         <Text style={styles.haveAccountText}>{labels.DontHaveAnAccount}<Text style={styles.signUpText}>{" " + labels.SignUp}</Text></Text>

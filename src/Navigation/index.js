@@ -1,9 +1,10 @@
 import React, {useRef} from 'react';
-import {NavigationContainer} from '@react-navigation/native';
+import {DefaultTheme, NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 // import TabStack from './tab/TabStack';
 import AuthStack from './Auth/AuthStack';
 import { navigationRef } from './NavigationService';
+import TabStack from './TabStack/TabStack';
 // import AppStack from './app/AppStack';
 // import DrawerStack from './drawer/DrawerStack';
 
@@ -17,11 +18,11 @@ const RootNavigator = () => {
         name="AuthStack"
         component={AuthStack}
       />
-      {/* <RootStack.Screen
+      <RootStack.Screen
         options={{headerShown: false}}
         name="TabStack"
         component={TabStack}
-      /> */}
+      />
       {/* <RootStack.Screen
         options={{headerShown: false}}
         name="AppStack"
@@ -35,11 +36,14 @@ const RootNavigator = () => {
     </RootStack.Navigator>
   );
 };
-
+const navTheme = DefaultTheme;
+navTheme.colors.background = '#141414';
+navTheme.colors.text = '#ffffff'
 const Routes = () => {
   const routeNameRef = useRef();
   return (
     <NavigationContainer
+    theme={navTheme}
       ref={navigationRef}
       onReady={() =>
         (routeNameRef.current = navigationRef.current.getCurrentRoute().name)
