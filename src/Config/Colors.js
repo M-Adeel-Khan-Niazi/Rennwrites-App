@@ -10,7 +10,8 @@ const colors = {
     themeGreen: '#15BD26',
     themeRemainTimeBrown: '#925B4C',
     tabInActiveBackground: '#1F1F1F',
-    notifBedgeColor: '#E4A70B'
+    notifBedgeColor: '#E4A70B',
+    menuItemTextColor: '#989190',
   };
   
   export default colors;

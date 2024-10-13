@@ -4,9 +4,15 @@ import colors from '../../Config/Colors';
 import { Assets } from '../../Assets';
 import { SvgXml } from 'react-native-svg';
 import { appLogoWhite, burgerIcon, cartIcon, searchIcon } from '../../Assets/svgs';
+import { PressableOpacity } from 'react-native-pressable-opacity';
+import labels from '../../Assets/Labels';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 const Header = ({
     onBack = () => { },
-    home = false
+    home = false,
+    onMenuPress = () => { },
+    homeBackShow = false,
+    title = ''
 }) => {
     return (
         <View>
@@ -17,35 +23,43 @@ const Header = ({
                             xml={appLogoWhite}
                             width={180}
                         />
-                        <View style={style.rightIconsContainer}>
-
-                        <View style={style.iconContainer}>
-                            <SvgXml
-                                xml={searchIcon}
-                                width={20}
-                                height={20}
-                            />
-                        </View>
-                        <View style={[style.iconContainer, style.cartContainer]}>
-                            <SvgXml
-                                xml={cartIcon}
-                                width={20}
-                                height={20}
-                            />
-                            <View style={style.dot} />
-                        </View>
-                        <View style={style.iconContainer}>
-                            <SvgXml
-                                xml={burgerIcon}
-                                width={20}
-                                height={20}
-                            />
-                        </View>
-                        </View>
+                        {
+                            homeBackShow ?
+                                <PressableOpacity onPress={onBack} activeOpacity={0.8} style={style.backButtonContainer}>
+                                    <MaterialCommunityIcons name='chevron-left' color={colors.white} size={20} />
+                                    <Text style={style.backText}>{labels.Back}</Text>
+                                </PressableOpacity>
+                                :
+                                <View style={style.rightIconsContainer}>
+                                    <View style={style.iconContainer}>
+                                        <SvgXml
+                                            xml={searchIcon}
+                                            width={20}
+                                            height={20}
+                                        />
+                                    </View>
+                                    <View style={[style.iconContainer, style.cartContainer]}>
+                                        <SvgXml
+                                            xml={cartIcon}
+                                            width={20}
+                                            height={20}
+                                        />
+                                        <View style={style.dot} />
+                                    </View>
+                                    <PressableOpacity onPress={onMenuPress} activeOpacity={0.8} style={style.iconContainer}>
+                                        <SvgXml
+                                            xml={burgerIcon}
+                                            width={20}
+                                            height={20}
+                                        />
+                                    </PressableOpacity>
+                                </View>
+                        }
                     </View>
                     :
                     <TouchableOpacity activeOpacity={0.8} onPress={onBack} style={style.container}>
-                        <Image source={Assets.backIcon} />
+                        <Image source={Assets.backIcon} style={style.backIcon} />
+                        <Text style={style.titleText}>{title}</Text>
                     </TouchableOpacity>
             }
         </View>
@@ -55,6 +69,8 @@ const Header = ({
 export default Header;
 const style = StyleSheet.create({
     container: {
+        flexDirection: 'row',
+        alignItems: 'center'
     },
     labelStyle: {
         fontSize: 16,
@@ -93,5 +109,26 @@ const style = StyleSheet.create({
         borderRadius: 100,
         top: 5,
         right: 6
+    },
+    backButtonContainer: {
+        flexDirection: 'row',
+        alignItems: 'center'
+    },
+    backText: {
+        color: colors.white,
+        fontSize: 14,
+        lineHeight: 17,
+        fontWeight: '500'
+    },
+    titleText: {
+        color: colors.themeTitleOrangeShade,
+        fontSize: 32,
+        lineHeight: 35,
+        fontWeight: '600',
+    marginLeft: 10
+    },
+    backIcon: {
+        width: 42,
+        height: 42
     }
 })

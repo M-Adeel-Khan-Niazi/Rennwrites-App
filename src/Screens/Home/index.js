@@ -12,6 +12,7 @@ import HorizontalCards from "../../Components/HorizontalCards";
 import { bookList, listTabs } from "../../Assets/MockData";
 import VerticalCards from "../../Components/VerticalCardList";
 import SubscribeCard from "../../Components/SubscribeCard";
+import { navigate } from "../../Navigation/NavigationService";
 
 const Home = () => {
     const [tabSelected, setTabSelected] = useState(0)
@@ -21,6 +22,7 @@ const Home = () => {
             <View style={styles.headerContainer}>
                 <Header 
                     home={true}
+                    onMenuPress={() => navigate('SideMenu')}
                 />
                 <ContinueReading />
             </View>

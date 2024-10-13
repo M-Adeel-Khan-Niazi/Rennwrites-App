@@ -5,6 +5,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import AuthStack from './Auth/AuthStack';
 import { navigationRef } from './NavigationService';
 import TabStack from './TabStack/TabStack';
+import MainStack from './MainStack/MainStack';
 // import AppStack from './app/AppStack';
 // import DrawerStack from './drawer/DrawerStack';
 
@@ -20,19 +21,9 @@ const RootNavigator = () => {
       />
       <RootStack.Screen
         options={{headerShown: false}}
-        name="TabStack"
-        component={TabStack}
+        name="MainStack"
+        component={MainStack}
       />
-      {/* <RootStack.Screen
-        options={{headerShown: false}}
-        name="AppStack"
-        component={AppStack}
-      /> */}
-      {/* <RootStack.Screen
-        options={{headerShown: false}}
-        name="DrawerStack"
-        component={DrawerStack}
-      /> */}
     </RootStack.Navigator>
   );
 };

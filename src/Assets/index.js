@@ -4,6 +4,7 @@ export const Assets = {
     onboarding3: require('./Onboarding/3.png'),
     backIcon: require('./Images/backIcon.png'),
     trackImage: require('./Images/trackImage.png'),
+    dummyProfile: require('./Images/dummyProfile.png'),
     // tabs icon
     homeOrange: require('./Images/homeOrange.png'),
     browseGray: require('./Images/browseGray.png'),

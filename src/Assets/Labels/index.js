@@ -31,7 +31,19 @@ const labels = {
     AudioBooks: 'Audio Books',
     TrendingBooks: 'Trending Books',
     SubscribeNowForAMonthlyDoseOfWellnessCulturalTreasures: 'Subscribe now for a Monthly dose of wellness & cultural treasures',
-    Subscribe: 'Subscribe'
+    Subscribe: 'Subscribe',
+    Back: 'Back',
+    ViewProfile: 'View Profile',
+    MyAccount: 'My Account', 
+    AboutUs: 'About Us',
+    Shop: 'Shop',
+    Books: 'Books',
+    SubscriptionBox: 'Subscription Box', 
+    ContactUs: 'Contact Us',
+    TermsConditions: 'Terms & Conditions', 
+    PrivacyPolicy: "Privacy Policy",
+    CookiePolicy: 'Cookie Policy', 
+    Logout: "Logout"
   }
 
   export default labels;

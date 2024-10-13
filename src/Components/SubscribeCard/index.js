@@ -27,6 +27,7 @@ export default SubscribeCard
 const style = StyleSheet.create({
     container: {
         position: 'relative',
+        marginTop: 20
     },
     metaContainer: {
         position: 'absolute',
