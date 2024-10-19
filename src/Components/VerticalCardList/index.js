@@ -34,8 +34,11 @@ const VerticalCards = ({
             horizontal={false}
             scrollEnabled={false}
             data={list}
+            key={'#'}
+            keyExtractor={item => "#" + item?.id}
             showsHorizontalScrollIndicator={false}
             renderItem={renderItem}
+            removeClippedSubviews={false}
             ItemSeparatorComponent={() => <View style={style.divider} />}
         />
     )

@@ -27,15 +27,15 @@ const SignIn = ({ navigation }) => {
                             <Octicons name={remember ? 'check-circle' : 'check-circle-fill'} color={colors.themeOrange} size={15} />
                             <Text style={styles.rememberMe}>{" " + labels.RememberMe}</Text>
                         </TouchableOpacity>
-                        <TouchableOpacity onPress={() => navigate('ForgotPasswordEmailScreen')} activeOpacity={0.8}>
+                        <TouchableOpacity onPress={() => navigation.navigate('ForgotPasswordEmailScreen')} activeOpacity={0.8}>
                             <Text style={styles.forgetText}>{labels.ForgetPassword}</Text>
                         </TouchableOpacity>
                     </View>
                     <Button
                         label={labels.SignIn}
-                        onPress={() =>navigate('MainStack')}
+                        onPress={() => navigation.navigate('MainStack')}
                     />
-                    <TouchableOpacity activeOpacity={0.8} onPress={() =>navigate('SignUp')} style={styles.haveAccountContainer}>
+                    <TouchableOpacity activeOpacity={0.8} onPress={() =>navigation.navigate('SignUp')} style={styles.haveAccountContainer}>
                         <Text style={styles.haveAccountText}>{labels.DontHaveAnAccount}<Text style={styles.signUpText}>{" " + labels.SignUp}</Text></Text>
                     </TouchableOpacity>
                 </View>

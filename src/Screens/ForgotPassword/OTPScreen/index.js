@@ -34,7 +34,7 @@ const ForgotPasswordOTPScreen = ({ navigation }) => {
                     <Button
                         label={labels.Submit}
                         containerStyle={styles.bottonContainer}
-                        onPress={() => navigate('ForgotPasswordConfirmPassScreen')}
+                        onPress={() => navigation.navigate('ForgotPasswordConfirmPassScreen')}
                     />
                     <TouchableOpacity activeOpacity={0.8} style={styles.haveAccountContainer}>
                         <Text style={styles.haveAccountText}>{labels.HavenReceivedCode}<Text style={styles.signUpText}>{" " + labels.Resend}</Text></Text>

@@ -43,7 +43,26 @@ const labels = {
     TermsConditions: 'Terms & Conditions', 
     PrivacyPolicy: "Privacy Policy",
     CookiePolicy: 'Cookie Policy', 
-    Logout: "Logout"
+    Logout: "Logout",
+    EBooks: 'E-Books',
+    Price: "Price",
+    Chapters: "Chapters",
+    Description: 'Description',
+    Author: "Author",
+    ListenFirstChapter: 'Listen First Chapter',
+    ReadFirstChapter: 'Read First Chapter',
+    SubscribeToListen: 'Subscribe to Listen',
+    SubscribeToRead: 'Subscribe to Read',
+    Size: 'Size',
+    Color: 'Color',
+    Qty: 'Qty',
+    AddToCart: 'Add To Cart',
+    Cart: 'Cart',
+    Apply: 'Apply',
+    AddCouponCode: 'Add Coupon Code',
+    GrandTotal: 'Grand Total',
+    ProceedToCheckout: 'Proceed To Checkout',
+    Checkout: 'Checkout'
   }
 
   export default labels;

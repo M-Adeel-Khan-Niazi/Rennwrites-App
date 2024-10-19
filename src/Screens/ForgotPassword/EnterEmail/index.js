@@ -26,7 +26,7 @@ const ForgotPasswordEmailScreen = ({ navigation }) => {
                     <Button
                         label={labels.Submit}
                         containerStyle={styles.bottonContainer}
-                        onPress={() => navigate('ForgotPasswordOTPScreen')}
+                        onPress={() => navigation.navigate('ForgotPasswordOTPScreen')}
                    />
                 </View>
             </View>

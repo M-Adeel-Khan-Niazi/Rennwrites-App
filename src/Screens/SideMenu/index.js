@@ -11,7 +11,7 @@ import { SvgXml } from 'react-native-svg';
 const SideMenu = ({ navigation }) => {
     const renderItem = ({ item, index }) => {
         return (
-            <PressableOpacity onPress={() => navigate(item?.navigate)} key={index} activeOpacity={0.8} style={styles.menuItemContainer}>
+            <PressableOpacity onPress={() => navigation.navigate(item?.navigate)} key={index} activeOpacity={0.8} style={styles.menuItemContainer}>
                 <SvgXml xml={item.icon} width={50} height={50} />
                 <Text style={styles.itemName}>{item?.name}</Text>
             </PressableOpacity>
@@ -24,7 +24,7 @@ const SideMenu = ({ navigation }) => {
                     home={true}
                     homeBackShow={true}
                     onBack={() => navigation.goBack()}
-                    onMenuPress={() => navigate('SideMenu')}
+                    onMenuPress={() => navigation.navigate('SideMenu')}
                 />
             </View>
             <ScrollView>
@@ -32,6 +32,8 @@ const SideMenu = ({ navigation }) => {
                     <ProfileDetailComp />
                     <FlatList
                         data={profileMenuList}
+                        key={'side_'}
+                        keyExtractor={item => "side_" + item?.id}
                         scrollEnabled={false}
                         contentContainerStyle={styles.listContainer}
                         ItemSeparatorComponent={() => <View style={styles.divider} />}

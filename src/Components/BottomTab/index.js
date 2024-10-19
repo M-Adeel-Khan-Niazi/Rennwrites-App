@@ -1,36 +1,33 @@
 import React from 'react';
 import { Image, Text, View } from 'react-native';
-// import labels from '../../assets/labels/English.labels';
 import styles from './style';
-import labels from '../../Assets/Labels';
-import { Assets } from '../../Assets';
 import { tabRoutes } from '../../Navigation/TabStack/TabRoutes';
 import { PressableOpacity } from 'react-native-pressable-opacity';
-// import styles from './BotttomTab.style';
+import colors from '../../Config/Colors';
 const routes = tabRoutes;
 const BottomTab = ({ navigation, state }) => {
-  console.log(navigation,state, 'sss')
-  let isFocused = 'Home';
-  state.routes.map((index, i) => {
-    if (i == state.index) {
-      isFocused = index.name;
-    }
-  });
   const SelectTab = item => {
-    item.navigateTo &&
-      navigation.navigate('TabStack', {
-        screen: item.name,
-      });
+    navigation.navigate('TabStack', {
+      screen: item.name,
+    });
   };
   return (
     <View style={styles.container}>
       {
-        routes?.map((text, index) => (
-          <PressableOpacity onPress={() => SelectTab(text)} activeOpacity={0.8} key={index} style={styles.itemContainer}>
-            <Image source={text?.icon} />
-            <Text style={styles.itemName}>{text?.label}</Text>
-          </PressableOpacity>
-        ))
+        routes?.map((text, index) => {
+          let isFocused = 'Home';
+          if (index == state.index) {
+            isFocused = text.name;
+          } else {
+            isFocused = 0
+          }
+          return (
+            <PressableOpacity onPress={() => SelectTab(text)} activeOpacity={0.8} key={index} style={styles.itemContainer}>
+              <Image source={text?.icon} tintColor={isFocused ? colors.themeOrange : colors.themeBorderColor} />
+              <Text style={styles.itemName(isFocused)}>{text?.label}</Text>
+            </PressableOpacity>
+          )
+        })
       }
     </View>
   );

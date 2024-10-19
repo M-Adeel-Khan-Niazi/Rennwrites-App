@@ -9,7 +9,8 @@ const MainStack = () => {
     return (
         <Main.Navigator
             options={{ headerShown: false }}
-            initialRouteName={'TabStack'}>
+            initialRouteName={'TabStack'}
+            >
             <Main.Screen
                 options={{ headerShown: false }}
                 name={"TabStack"}

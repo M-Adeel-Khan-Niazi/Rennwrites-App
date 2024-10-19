@@ -11,12 +11,12 @@ const styles = StyleSheet.create({
   itemContainer: {
     alignItems: 'center'
   },
-  itemName: {
+  itemName: (active) => ({
     fontSize: 11,
     lineHeight:22,
     textAlign: 'center',
-    color: colors.themeBorderColor
-  }
+    color: active ? colors.themeOrange : colors.themeBorderColor
+  })
 });
 
 export default styles;

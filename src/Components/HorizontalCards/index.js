@@ -11,8 +11,8 @@ const HorizontalCards = ({
             <View key={index} style={style.itemContainer}>
                 <Image source={item.image} style={style.imageStyle} />
                 <View style={style.titleContainer}>
-                <Text style={style.title}>{item?.title}</Text>
-                <Text style={style.auther}>{item?.auther}</Text>
+                    <Text style={style.title}>{item?.title}</Text>
+                    <Text style={style.auther}>{item?.auther}</Text>
                 </View>
             </View>
         )
@@ -21,7 +21,9 @@ const HorizontalCards = ({
         <FlatList
             horizontal={true}
             data={list}
-            contentContainerStyle={{marginTop: 10}}
+            key={'hc_'}
+            keyExtractor={item => "hc_" + item?.id}
+            contentContainerStyle={{ marginTop: 10 }}
             showsHorizontalScrollIndicator={false}
             renderItem={renderItem}
             ItemSeparatorComponent={() => <View style={style.divider} />}
@@ -34,9 +36,9 @@ const style = StyleSheet.create({
     container: {
 
     },
-    
+
     itemContainer: {
-        
+
     },
     divider: {
         marginHorizontal: 10

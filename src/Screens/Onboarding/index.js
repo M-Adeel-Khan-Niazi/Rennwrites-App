@@ -33,7 +33,7 @@ const slides = [
         backgroundColor: '#22bcb5',
     }
 ];
-const OnboardingScreens = () => {
+const OnboardingScreens = ({navigation}) => {
     const sliderRef = useRef()
     const _renderItem = ({ item }) => {
         return (
@@ -78,9 +78,9 @@ const OnboardingScreens = () => {
                 <View style={styles.buttonContainer}>
                     <Button
                         label={activeIndex === 2 ? labels.GetStarted : labels.Next}
-                        onPress={() => activeIndex === 2 ? navigate('SignIn') : sliderRef.current?.goToSlide(activeIndex + 1, true)}
+                        onPress={() => activeIndex === 2 ? navigation.navigate('SignIn') : sliderRef.current?.goToSlide(activeIndex + 1, true)}
                     />
-                    <TouchableOpacity activeOpacity={0.8} onPress={() => navigate('SignUp')} style={styles.haveAccountContainer}>
+                    <TouchableOpacity activeOpacity={0.8} onPress={() => navigation.navigate('SignUp')} style={styles.haveAccountContainer}>
                         <Text style={styles.haveAccountText}>{labels.DontHaveAnAccount}<Text style={styles.signUpText}>{" "+labels.SignUp}</Text></Text>
                     </TouchableOpacity>
                 </View>

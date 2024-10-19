@@ -12,6 +12,8 @@ const colors = {
     tabInActiveBackground: '#1F1F1F',
     notifBedgeColor: '#E4A70B',
     menuItemTextColor: '#989190',
+    detailTimerColor: '#C9C4C4',
+    grayColorPalette: '#3C3C3C'
   };
   
   export default colors;

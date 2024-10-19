@@ -40,11 +40,7 @@ const Routes = () => {
         (routeNameRef.current = navigationRef.current.getCurrentRoute().name)
       }
       onStateChange={async () => {
-        const previousRouteName = routeNameRef.current;
         const currentRouteName = navigationRef.current.getCurrentRoute().name;
-        // if (previousRouteName !== currentRouteName) {
-        //   await analytics().logEvent(currentRouteName);
-        // }
         routeNameRef.current = currentRouteName;
       }}>
       <RootNavigator />

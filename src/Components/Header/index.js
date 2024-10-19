@@ -12,10 +12,11 @@ const Header = ({
     home = false,
     onMenuPress = () => { },
     homeBackShow = false,
-    title = ''
+    title = '',
+    contentContainerStyle = {}
 }) => {
     return (
-        <View>
+        <View style={contentContainerStyle}>
             {
                 home ?
                     <View style={style.headerContainer}>

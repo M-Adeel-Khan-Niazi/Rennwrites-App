@@ -6,7 +6,10 @@ const Tab = createBottomTabNavigator();
 const routes = tabRoutes;
 const TabStack = () => {
   return (
-    <Tab.Navigator tabBar={props => <BottomTab {...props} />}>
+    <Tab.Navigator 
+    lazy={true}
+     
+    tabBar={props => <BottomTab {...props} />}>
         {routes.map(data => {
         return (
           <Tab.Screen

@@ -1,26 +1,31 @@
 import React from 'react';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
 import colors from '../../Config/Colors';
+import { PressableOpacity } from 'react-native-pressable-opacity';
 const HorizontalTabs = ({
     list = [],
-    selected = 0
+    selected = 0,
+    onPress = () => {}
 }) => {
     const renderItem = ({ item, index }) => {
         return (
-            <View key={index} style={style.itemContainer(selected === item.id)}>
+            <PressableOpacity key={index} onPress={() => onPress(item?.id)} style={style.itemContainer(selected === item.id)}>
                 <Text style={style.itemLabel(selected === item.id)}>
                     {item?.label}
                 </Text>
-            </View>
+            </PressableOpacity>
         )
     }
     return (
         <FlatList
             horizontal={true}
             data={list}
+            key={'ht_'}
+            keyExtractor={item => "ht_" + item?.id}
             contentContainerStyle={{marginTop: 10}}
             showsHorizontalScrollIndicator={false}
             renderItem={renderItem}
+            removeClippedSubviews={false}
             ItemSeparatorComponent={() => <View style={style.divider} />}
         />
     )

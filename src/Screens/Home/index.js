@@ -12,9 +12,9 @@ import HorizontalCards from "../../Components/HorizontalCards";
 import { bookList, listTabs } from "../../Assets/MockData";
 import VerticalCards from "../../Components/VerticalCardList";
 import SubscribeCard from "../../Components/SubscribeCard";
-import { navigate } from "../../Navigation/NavigationService";
+import { navigate, navigationRef } from "../../Navigation/NavigationService";
 
-const Home = () => {
+const Home = ({navigation}) => {
     const [tabSelected, setTabSelected] = useState(0)
     return(
         <SafeAreaView style={styles.container}>
@@ -22,7 +22,7 @@ const Home = () => {
             <View style={styles.headerContainer}>
                 <Header 
                     home={true}
-                    onMenuPress={() => navigate('SideMenu')}
+                    onMenuPress={() => navigation.navigate('SideMenu')}
                 />
                 <ContinueReading />
             </View>
