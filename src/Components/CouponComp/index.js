@@ -4,16 +4,16 @@ import Button from "../Button";
 import labels from "../../Assets/Labels";
 
 const CouponComp = () => {
-    return(
+    return (
         <View style={style.container}>
-            <TextInput 
-            style={style.textInputStyle}
-            placeholder={labels.AddCouponCode}
-            placeholderTextColor={colors.themeBorderColor}
+            <TextInput
+                style={style.textInputStyle}
+                placeholder={labels.AddCouponCode}
+                placeholderTextColor={colors.themeBorderColor}
             />
-            <Button 
-            label={labels.Apply}
-            containerStyle={style.buttonContainer}
+            <Button
+                label={labels.Apply}
+                containerStyle={style.buttonContainer}
             />
         </View>
     )
@@ -30,8 +30,9 @@ const style = StyleSheet.create({
     },
     textInputStyle: {
         flex: 3,
+        color: colors.white
     },
     buttonContainer: {
-      flex: 1  
+        flex: 1
     }
 })

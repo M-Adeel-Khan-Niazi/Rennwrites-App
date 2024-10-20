@@ -5,12 +5,14 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import { SvgXml } from 'react-native-svg';
 import { playIcon } from '../../Assets/svgs';
 import { PressableOpacity } from 'react-native-pressable-opacity';
+import { RFValue } from 'react-native-responsive-fontsize';
 const VerticalCards = ({
     list = [],
+    onPressCard = () => {}
 }) => {
     const renderItem = ({ item, index }) => {
         return (
-            <View key={index} style={style.itemContainer}>
+            <PressableOpacity activeOpacity={0.8} onPress={onPressCard} key={index} style={style.itemContainer}>
                 <Image source={item.image} style={style.imageStyle} />
                 <View style={style.metaContainer}>
 
@@ -26,7 +28,7 @@ const VerticalCards = ({
                         />
                     </PressableOpacity>
                 </View>
-            </View>
+            </PressableOpacity>
         )
     }
     return (
@@ -65,17 +67,17 @@ const style = StyleSheet.create({
         resizeMode: 'cover'
     },
     title: {
-        fontSize: 16,
+        fontSize: RFValue(14),
         color: colors.themeTitleOrangeShade,
-        lineHeight: 19,
+        lineHeight: 20,
         fontWeight: '600'
     },
     titleContainer: {
         marginLeft: 10
     },
     auther: {
-        fontSize: 12,
-        lineHeight: 13,
+        fontSize: RFValue(12),
+        lineHeight: 20,
         fontWeight: '300',
         color: colors.playerBackground
     },

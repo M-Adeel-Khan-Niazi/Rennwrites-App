@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Dimensions, Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Dimensions, Image, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import { Assets } from '../../Assets';
 import { styles } from './style';
@@ -9,6 +9,7 @@ import Faded from '../../Components/FadedBackground';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Button from '../../Components/Button';
 import { navigate } from '../../Navigation/NavigationService';
+import FocusAwareStatusBar from '../../Components/FocusAwareStatusBar';
 
 const slides = [
     {
@@ -57,7 +58,6 @@ const OnboardingScreens = ({navigation}) => {
         // this.setState({ showRealApp: true });
     }
     const renderPagination = (activeIndex) => {
-        // console.log(ss)
         return <View style={styles.paginationContainer}>
             <SafeAreaView>
                 <View style={styles.paginationDots}>
@@ -88,6 +88,8 @@ const OnboardingScreens = ({navigation}) => {
         </View>
     }
     return (
+        <>
+        <FocusAwareStatusBar barStyle={'light-content'} translucent backgroundColor={'transparent'} />
         <AppIntroSlider
             renderItem={_renderItem}
             ref={sliderRef}
@@ -96,7 +98,8 @@ const OnboardingScreens = ({navigation}) => {
             showNextButton={false}
             onDone={_onDone}
             contentContainerStyle={{ backgroundColor: colors.black, }}
-        />
+            />
+            </>
     )
 }
 

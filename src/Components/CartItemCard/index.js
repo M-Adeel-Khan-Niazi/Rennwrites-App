@@ -2,6 +2,7 @@ import { Image, StyleSheet, Text, View } from "react-native"
 import colors from "../../Config/Colors";
 import labels from "../../Assets/Labels";
 import QuantityComponent from "../QuantityComponent";
+import { RFValue } from "react-native-responsive-fontsize";
 
 const CartItemCard = ({ item, index }) => {
     return (
@@ -27,14 +28,13 @@ const CartItemCard = ({ item, index }) => {
                 <View style={style.priceContainer}>
                     <Text style={style.priceTag}>{item?.price}</Text>
                     <View>
-
-                    <QuantityComponent
-                                        iconContainer={style.iconContainer}  
-                                        pagingContainer={style.pagingContainer}
-                                        containerStyle={style.quantityContainerStyle}
-                                        qtyTextStyle={style.qtyTextStyle}
-                                        />
-                                        </View>
+                        <QuantityComponent
+                            iconContainer={style.iconContainer}
+                            pagingContainer={style.pagingContainer}
+                            containerStyle={style.quantityContainerStyle}
+                            qtyTextStyle={style.qtyTextStyle}
+                        />
+                    </View>
                 </View>
             </View>
         </View>
@@ -54,7 +54,7 @@ const style = StyleSheet.create({
         resizeMode: 'cover'
     },
     title: {
-        fontSize: 16,
+        fontSize: RFValue(14),
         color: colors.themeTitleOrangeShade,
         lineHeight: 19,
         fontWeight: '600'
@@ -74,8 +74,8 @@ const style = StyleSheet.create({
         alignItems: 'center'
     },
     auther: {
-        fontSize: 12,
-        lineHeight: 13,
+        fontSize: RFValue(12),
+        lineHeight: 18,
         fontWeight: '300',
         color: colors.playerBackground
     },
@@ -87,7 +87,7 @@ const style = StyleSheet.create({
         justifyContent: 'space-between'
     },
     priceTag: {
-        fontSize: 16,
+        fontSize: RFValue(14),
         lineHeight: 18,
         fontWeight: '600',
         color: colors.themeOrange
@@ -105,13 +105,13 @@ const style = StyleSheet.create({
     },
     priceLabel: {
         color: colors.themeTitleOrangeShade,
-        fontSize: 20,
+        fontSize: RFValue(16),
         lineHeight: 32,
         fontWeight: '600'
     },
     sizeText: {
         color: colors.themeBorderColor,
-        fontSize: 14,
+        fontSize: RFValue(12),
         lineHeight: 16,
         fontWeight: '500'
     },

@@ -7,13 +7,15 @@ import { appLogoWhite, burgerIcon, cartIcon, searchIcon } from '../../Assets/svg
 import { PressableOpacity } from 'react-native-pressable-opacity';
 import labels from '../../Assets/Labels';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
+import { RFValue } from 'react-native-responsive-fontsize';
 const Header = ({
     onBack = () => { },
     home = false,
     onMenuPress = () => { },
     homeBackShow = false,
     title = '',
-    contentContainerStyle = {}
+    contentContainerStyle = {},
+    onCartPress = () => { }
 }) => {
     return (
         <View style={contentContainerStyle}>
@@ -39,14 +41,14 @@ const Header = ({
                                             height={20}
                                         />
                                     </View>
-                                    <View style={[style.iconContainer, style.cartContainer]}>
+                                    <PressableOpacity activeOpacity={0.8} onPress={onCartPress} style={[style.iconContainer, style.cartContainer]}>
                                         <SvgXml
                                             xml={cartIcon}
                                             width={20}
                                             height={20}
                                         />
                                         <View style={style.dot} />
-                                    </View>
+                                    </PressableOpacity>
                                     <PressableOpacity onPress={onMenuPress} activeOpacity={0.8} style={style.iconContainer}>
                                         <SvgXml
                                             xml={burgerIcon}
@@ -74,7 +76,7 @@ const style = StyleSheet.create({
         alignItems: 'center'
     },
     labelStyle: {
-        fontSize: 16,
+        fontSize: RFValue(16),
         lineHeight: 16,
         textAlign: 'center',
         color: colors.white
@@ -117,16 +119,16 @@ const style = StyleSheet.create({
     },
     backText: {
         color: colors.white,
-        fontSize: 14,
+        fontSize: RFValue(14),
         lineHeight: 17,
         fontWeight: '500'
     },
     titleText: {
         color: colors.themeTitleOrangeShade,
-        fontSize: 32,
-        lineHeight: 35,
+        fontSize: RFValue(24),
+        lineHeight: 32,
         fontWeight: '600',
-    marginLeft: 10
+        marginLeft: 10
     },
     backIcon: {
         width: 42,

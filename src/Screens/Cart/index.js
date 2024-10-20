@@ -24,8 +24,8 @@ const Cart = ({ navigation }) => {
     }
     return (
         <SafeAreaView style={styles.container}>
-            <StatusBar barStyle={'light-content'} backgroundColor={colors.black} />
-            <Header title={labels.Cart} />
+            <StatusBar barStyle={'light-content'} backgroundColor={'transparent'} />
+            <Header title={labels.Cart} onBack={() => navigation.goBack()} />
             <View style={styles.bodyContainer}>
                 <SwipeListView
                     data={shopData}

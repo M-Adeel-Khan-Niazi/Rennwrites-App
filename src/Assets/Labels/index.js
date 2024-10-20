@@ -62,7 +62,29 @@ const labels = {
     AddCouponCode: 'Add Coupon Code',
     GrandTotal: 'Grand Total',
     ProceedToCheckout: 'Proceed To Checkout',
-    Checkout: 'Checkout'
+    Checkout: 'Checkout',
+    ShippingDetails: 'Shipping Details',
+    EmailAddress: 'Email Address',
+    Address: 'Address',
+    BillingDetails: 'Billing Details',
+    SameAsShippingDetails: 'Same as Shipping Details',
+    UseSavedAddress: 'Use Saved Address',
+    AddNewAddress: 'Add New Address',
+    ProceedToPayment: 'Proceed To Payment',
+    EnterSuitApartmentStreet : 'Enter Suit/Apartment, street',
+    City: 'City',
+    State: 'State',
+    ZipCode: 'Zip Code',
+    Country: 'Country',
+    PaymentDetails: 'Payment details',
+    EnterCardDetails: 'Enter Card Details',
+    NameOnCard: 'Name on Card',
+    CardNumber: 'Card Number',
+    CVC: 'CVC',
+    MMYY: 'MM/YY',
+    PayNow: 'Pay Now',
+    OrderSummary: "Order Summary",
+    TotalAmount: 'Total Amount'
   }
 
   export default labels;

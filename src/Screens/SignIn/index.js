@@ -14,7 +14,7 @@ const SignIn = ({ navigation }) => {
     const [showPassword, setShowPassword] = useState(false)
     return (
         <SafeAreaView style={styles.container}>
-            <StatusBar barStyle={'light-content'} backgroundColor={colors.black} />
+            <StatusBar barStyle={'light-content'} translucent backgroundColor={'transparent'} />
             <Header onBack={() => navigation.goBack()} />
             <View style={styles.bodyContainer}>
                 <Text style={styles.title}>{labels.SignIn}</Text>

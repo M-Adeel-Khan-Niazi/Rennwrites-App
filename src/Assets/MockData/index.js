@@ -86,3 +86,28 @@ export const shopData = [
         price: '$20.50'
     }
 ]
+export const addressList = [
+    {
+        checked: true,
+        title: 'Address 1',
+        address: 'Shop# 804, Lorem ipsum, dummy address, vero eos et accusamus, dignissimos, CA',
+        defaultText: 'Default Address'
+    }
+]
+export const orderItems = [
+    {
+        name: 'RennWrites T-Shirt',
+        quantity: 'X2',
+        price: '$20.50'
+    },
+    {
+        name: 'RennWrites T-Shirt',
+        quantity: 'X2',
+        price: '$20.50'
+    },
+    {
+        name: 'RennWrites T-Shirt',
+        quantity: 'X2',
+        price: '$20.50'
+    }
+]

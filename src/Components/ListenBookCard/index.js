@@ -3,6 +3,7 @@ import { PressableOpacity } from "react-native-pressable-opacity"
 import colors from "../../Config/Colors";
 import { SvgXml } from "react-native-svg";
 import { playIcon } from "../../Assets/svgs";
+import { RFValue } from "react-native-responsive-fontsize";
 
 const ListenBookCard = ({
     onPress = () => { },
@@ -54,14 +55,14 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between'
     },
     bookTitle: {
-        fontSize: 16,
+        fontSize: RFValue(16),
         color: colors.themeTitleOrangeShade,
         lineHeight: 20,
         fontWeight: '600',
 
     },
     autherText: {
-        fontSize: 12,
+        fontSize: RFValue(12),
         color: colors.playerBackground,
         lineHeight: 13,
         fontWeight: '600',

@@ -4,10 +4,13 @@ import colors from '../../Config/Colors';
 import labels from '../../Assets/Labels';
 import { Assets } from '../../Assets';
 import ListHeader from '../ListHeader';
-const ContinueReading = ({ }) => {
+import { RFValue } from 'react-native-responsive-fontsize';
+const ContinueReading = ({
+    onViewAll = () => {}
+}) => {
     return (
         <View style={style.container}>
-            <ListHeader label={labels.ContinueReading} showAll={true} />
+            <ListHeader label={labels.ContinueReading} onViewAll={onViewAll} showAll={true} />
             <View style={style.itemContainer}>
                 <Image source={Assets.trackImage} />
                 <View style={style.metaData}>
@@ -47,13 +50,13 @@ const style = StyleSheet.create({
         justifyContent: 'space-between',
     },
     titleText: {
-        fontSize: 18,
-        lineHeight: 32,
+        fontSize: RFValue(14),
+        lineHeight: 24,
         fontWeight: '600'
     },
     autherName: {
-        fontSize: 12,
-        lineHeight: 13,
+        fontSize: RFValue(12),
+        lineHeight: 18,
         color: colors.iconDarkBackground
     },
     barHeader: {
@@ -73,12 +76,12 @@ const style = StyleSheet.create({
         width: Dimensions.get('screen').width / 1.6
     },
     completedLabel: {
-        fontSize: 11,
-        lineHeight: 13
+        fontSize: RFValue(10),
+        lineHeight: 16
     },
     remainTime: {
-        fontSize: 12,
-        lineHeight: 13,
+        fontSize: RFValue(10),
+        lineHeight: 16,
         color: colors.themeRemainTimeBrown
     }
 

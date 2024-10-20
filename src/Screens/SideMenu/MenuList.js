@@ -24,7 +24,7 @@ export const profileMenuList = [
         id: 3,
         name: labels.shop,
         icon: shopProfile,
-        navigate: ''
+        navigate: 'ShopScreen'
     },
     {
         id: 4,
@@ -66,6 +66,6 @@ export const profileMenuList = [
         id: 10,
         name: labels.Logout,
         icon: logoutProfile,
-        navigate: ''
+        navigate: 'SignIn'
     }
 ]

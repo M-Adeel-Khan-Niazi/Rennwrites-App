@@ -3,11 +3,12 @@ import { Image, StyleSheet, TextInput, TouchableOpacity, View } from "react-nati
 import colors from "../../Config/Colors";
 import { Assets } from "../../Assets";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
+import { RFValue } from "react-native-responsive-fontsize";
 const TextInputComp = ({
     placeholder = '',
     showEye = false,
     showPassword = false,
-    onShowEye = () => {},
+    onShowEye = () => { },
     keyboardType = 'default'
 }) => {
     return (
@@ -21,11 +22,11 @@ const TextInputComp = ({
             />
             {
                 showEye ?
-                <TouchableOpacity onPress={onShowEye} activeOpacity={0.8} >
-                <MaterialCommunityIcons name={!showPassword ? "eye-off" : "eye"} color={colors.white} size={20} />
-                </TouchableOpacity>
-                :
-                null
+                    <TouchableOpacity onPress={onShowEye} activeOpacity={0.8} >
+                        <MaterialCommunityIcons name={!showPassword ? "eye-off" : "eye"} color={colors.white} size={20} />
+                    </TouchableOpacity>
+                    :
+                    null
             }
         </View>
     )
@@ -46,7 +47,7 @@ const styles = StyleSheet.create({
     textStyle: {
         height: 50,
         color: colors.white,
-        fontSize: 14,
+        fontSize: RFValue(14),
         lineHeight: 16,
         flex: 1
     },

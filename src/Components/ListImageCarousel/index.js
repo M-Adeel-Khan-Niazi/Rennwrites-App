@@ -4,9 +4,8 @@ const ListImageCarousel = ({
     data = null,
     index = 0
 }) => {
-    console.log(data, index, 'ddd')
     return(
-        <View style={style.container}>
+        <View key={index} style={style.container}>
             <Image source={data?.image} style={style.imageStyle} />
         </View>
     )

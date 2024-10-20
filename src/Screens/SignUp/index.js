@@ -15,7 +15,7 @@ const SignUp = ({ navigation }) => {
     const [showConfPassword, setShowConfPassword] = useState(false)
     return (
         <SafeAreaView style={styles.container}>
-            <StatusBar barStyle={'light-content'} backgroundColor={colors.black} />
+            <StatusBar barStyle={'light-content'} translucent backgroundColor={'transparent'} />
             <Header onBack={() => navigation.goBack()} />
             <ScrollView>
                 <View style={styles.bodyContainer}>
@@ -40,7 +40,6 @@ const SignUp = ({ navigation }) => {
                             textStyle={styles.phoneInputText}
                             style={styles.phoneInputStyle}
                             renderFlag={({ imageSource }) => {
-                                console.log(imageSource)
                                 return (
                                     <View style={styles.flagContainer}>
                                         <Image source={imageSource} width={20} height={20} style={styles.flagImage} />

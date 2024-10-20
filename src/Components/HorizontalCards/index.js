@@ -3,18 +3,20 @@ import { FlatList, Image, StyleSheet, Text, View } from 'react-native';
 import colors from '../../Config/Colors';
 import labels from '../../Assets/Labels';
 import { PressableOpacity } from 'react-native-pressable-opacity';
+import { RFValue } from 'react-native-responsive-fontsize';
 const HorizontalCards = ({
     list = [],
+    onPressCard = () => {}
 }) => {
     const renderItem = ({ item, index }) => {
         return (
-            <View key={index} style={style.itemContainer}>
+            <PressableOpacity onPress={onPressCard} activeOpacity={0.8} key={index} style={style.itemContainer}>
                 <Image source={item.image} style={style.imageStyle} />
                 <View style={style.titleContainer}>
                     <Text style={style.title}>{item?.title}</Text>
                     <Text style={style.auther}>{item?.auther}</Text>
                 </View>
-            </View>
+            </PressableOpacity>
         )
     }
     return (
@@ -49,17 +51,18 @@ const style = StyleSheet.create({
         resizeMode: 'cover'
     },
     title: {
-        fontSize: 16,
+        fontSize: RFValue(14),
         color: colors.themeTitleOrangeShade,
-        lineHeight: 19,
+        lineHeight: 20,
         fontWeight: '600'
     },
     titleContainer: {
         marginTop: 10
     },
     auther: {
-        fontSize: 12,
+        fontSize: RFValue(12),
         fontWeight: '300',
+        lineHeight: 20,
         color: colors.playerBackground
     }
 })

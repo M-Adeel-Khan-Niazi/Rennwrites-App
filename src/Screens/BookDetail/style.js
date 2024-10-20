@@ -1,5 +1,6 @@
 import { Dimensions, StyleSheet } from "react-native";
 import colors from "../../Config/Colors";
+import { RFValue } from "react-native-responsive-fontsize";
 
 export const styles = StyleSheet.create({
     container: {
@@ -47,20 +48,20 @@ export const styles = StyleSheet.create({
     },
     timerText: {
         color: colors.detailTimerColor,
-        fontSize: 12,
+        fontSize: RFValue(12),
         lineHeight: 13,
         fontWeight: '300'
     },
     title: {
         color: colors.themeTitleOrangeShade,
-        fontSize: 32,
-        lineHeight: 35,
+        fontSize: RFValue(20),
+        lineHeight: 26,
         fontWeight: '600'
     },
     priceLabel: {
         color: colors.themeTitleOrangeShade,
-        fontSize: 20,
-        lineHeight: 32,
+        fontSize: RFValue(14),
+        lineHeight: 20,
         fontWeight: '600'
     },
     priceTag: {
@@ -72,14 +73,14 @@ export const styles = StyleSheet.create({
         marginVertical: 10
     },
     descText: {
-        fontSize: 14,
+        fontSize: RFValue(12),
         lineHeight: 16,
         color: colors.themeTitleOrangeShade,
         opacity: 0.6
     },
     autherLabel: {
-    fontSize: 15,
-    lineHeight: 24,
+    fontSize: RFValue(14),
+    lineHeight: 21,
     color: colors.themeOrange    
     },
     autherName: {
@@ -101,7 +102,7 @@ export const styles = StyleSheet.create({
     },
     lfcButtonLabelStyle: {
         color: colors.themeOrange,
-        fontSize: 16,
+        fontSize: RFValue(16),
         lineHeight: 17
     },
     bottonContainer: {
@@ -143,8 +144,8 @@ export const styles = StyleSheet.create({
     },
     productRemainTag: {
         color: colors.themeOrange,
-        fontSize: 12,
-        lineHeight: 28,
+        fontSize: RFValue(10),
+        lineHeight: 18,
         fontWeight: '600'
     },
     colorPalet: (color) => ({

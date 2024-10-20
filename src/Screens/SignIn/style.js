@@ -1,5 +1,6 @@
 import { Dimensions, StyleSheet } from "react-native";
 import colors from "../../Config/Colors";
+import { RFValue } from "react-native-responsive-fontsize";
 
 export const styles = StyleSheet.create({
     container: {
@@ -9,14 +10,14 @@ export const styles = StyleSheet.create({
     },
     title: {
         color: colors.white,
-        fontSize: 40,
+        fontSize: RFValue(32),
         lineHeight: 40
     },
     description: {
         color: colors.white,
         marginVertical: 10,
-        fontSize: 14,
-        lineHeight: 17
+        fontSize: RFValue(14),
+        lineHeight: 20
     },
     bodyContainer: {
         // marginHorizontal: 20,
@@ -39,7 +40,8 @@ export const styles = StyleSheet.create({
         marginBottom: 10
     },
     haveAccountText: {
-        fontSize: 14,
+        fontSize: RFValue(14),
+        lineHeight: 20,
         textAlign: 'center',
         color: colors.white
     },

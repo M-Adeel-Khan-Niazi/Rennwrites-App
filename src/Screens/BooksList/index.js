@@ -35,7 +35,7 @@ const BooksList = ({ navigation }) => {
     }
     return (
         <SafeAreaView style={styles.container}>
-            <StatusBar barStyle={'light-content'} backgroundColor={colors.black} />
+            <StatusBar barStyle={'light-content'} backgroundColor={'transparent'} />
             <Header onBack={() => navigation.goBack()} title={labels.Books} contentContainerStyle={styles.headerContainer} />
             <View style={styles.bodyContainer}>
                 <View style={styles.tabContainer}>

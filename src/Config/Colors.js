@@ -13,7 +13,8 @@ const colors = {
     notifBedgeColor: '#E4A70B',
     menuItemTextColor: '#989190',
     detailTimerColor: '#C9C4C4',
-    grayColorPalette: '#3C3C3C'
+    grayColorPalette: '#3C3C3C',
+    defaultGrayDark: '#565656'
   };
   
   export default colors;

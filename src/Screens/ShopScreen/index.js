@@ -32,9 +32,9 @@ const ShopScreen = ({navigation}) => {
     }
     return (
         <SafeAreaView style={styles.container}>
-            <StatusBar barStyle={'light-content'} backgroundColor={colors.black} />
-            <Header title={labels.shop} />
-            <ScrollView>
+            <StatusBar barStyle={'light-content'} translucent={true} backgroundColor={'transparent'} />
+            <Header title={labels.shop} onBack={() => navigation.goBack()} />
+            <ScrollView showsVerticalScrollIndicator={false}>
                 <View style={styles.bodyContainer}>
                     <View style={styles.tabContainer}>
                         <Text style={styles.RecommendedForYouText}>{labels.RecommendedForYou}</Text>
@@ -44,6 +44,7 @@ const ShopScreen = ({navigation}) => {
                         key={'_'}
                         scrollEnabled={false}
                         data={shopData}
+                        showsVerticalScrollIndicator={false}
                         keyExtractor={item => "_" + item.id}
                         columnWrapperStyle={styles.flatlstCulumnContainer}
                         ItemSeparatorComponent={() => <View style={styles.divider} />}

@@ -3,11 +3,12 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { styles } from './style';
 import Header from '../../Components/Header';
 import { navigate } from '../../Navigation/NavigationService';
-import { FlatList, ScrollView, Text, View } from 'react-native';
+import { FlatList, ScrollView, StatusBar, Text, View } from 'react-native';
 import ProfileDetailComp from '../../Components/ProfileDetailComp';
 import { profileMenuList } from './MenuList';
 import { PressableOpacity } from 'react-native-pressable-opacity';
 import { SvgXml } from 'react-native-svg';
+import colors from '../../Config/Colors';
 const SideMenu = ({ navigation }) => {
     const renderItem = ({ item, index }) => {
         return (
@@ -19,12 +20,12 @@ const SideMenu = ({ navigation }) => {
     }
     return (
         <SafeAreaView style={styles.container}>
+            <StatusBar barStyle={'light-content'} backgroundColor={colors.themeOrange} />
             <View style={styles.headerContainer}>
                 <Header
                     home={true}
                     homeBackShow={true}
                     onBack={() => navigation.goBack()}
-                    onMenuPress={() => navigation.navigate('SideMenu')}
                 />
             </View>
             <ScrollView>

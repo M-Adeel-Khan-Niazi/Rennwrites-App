@@ -19,7 +19,6 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import colors from '../../Config/Colors';
 import QuantityComponent from '../../Components/QuantityComponent';
 const BookDetail = ({ navigation, route }) => {
-    console.log(route?.params)
     const insets = useSafeAreaInsets()
 
     const { audio, shop } = route?.params
@@ -148,31 +147,31 @@ const BookDetail = ({ navigation, route }) => {
                                     <Text style={styles.descText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</Text>
                                     {
                                         shop ?
-                                        null
-                                        :
-                                        <>
-                                        <Text style={styles.autherLabel}>{labels.Author}: <Text style={styles.autherName}>{'By Mychael T Renn'}</Text></Text>
-                                        <Text style={styles.descText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</Text>
-                                        </>
+                                            null
+                                            :
+                                            <>
+                                                <Text style={styles.autherLabel}>{labels.Author}: <Text style={styles.autherName}>{'By Mychael T Renn'}</Text></Text>
+                                                <Text style={styles.descText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</Text>
+                                            </>
                                     }
                                 </View>
                                 <View style={styles.bottonContainer}>
                                     {
                                         shop ?
-                                        <QuantityComponent 
-                                        
-                                        />
-                                        :
-                                    <Button
-                                        containerStyle={styles.lfcButtonStyle}
-                                        label={audio ? labels.ListenFirstChapter : labels.ReadFirstChapter}
-                                        labelStyle={styles.lfcButtonLabelStyle}
-                                    />
+                                            <QuantityComponent
+
+                                            />
+                                            :
+                                            <Button
+                                                containerStyle={styles.lfcButtonStyle}
+                                                label={audio ? labels.ListenFirstChapter : labels.ReadFirstChapter}
+                                                labelStyle={styles.lfcButtonLabelStyle}
+                                            />
                                     }
                                     <Button
-                                    onPress={() => shop ? navigation.navigate('Cart') : null}
+                                        onPress={() => shop ? navigation.navigate('Cart') : null}
                                         containerStyle={styles.stlButtonStyle}
-                                        label={shop ? labels.AddToCart :audio ? labels.SubscribeToListen : labels.SubscribeToRead}
+                                        label={shop ? labels.AddToCart : audio ? labels.SubscribeToListen : labels.SubscribeToRead}
                                         labelStyle={styles.stlButtonLabelStyle} />
                                 </View>
                             </View>

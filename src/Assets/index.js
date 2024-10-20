@@ -7,6 +7,7 @@ export const Assets = {
     trackImage: require('./Images/trackImage.png'),
     dummyProfile: require('./Images/dummyProfile.png'),
     shop: require('./Images/shop.png'),
+    subscription: require("./Images/subscription.png"), 
     // tabs icon
     homeOrange: require('./Images/homeOrange.png'),
     browseGray: require('./Images/browseGray.png'),

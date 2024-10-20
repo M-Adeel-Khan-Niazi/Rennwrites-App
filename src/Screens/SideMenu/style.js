@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import colors from "../../Config/Colors";
+import { RFValue } from "react-native-responsive-fontsize";
 
 export const styles = StyleSheet.create({
     container: {
@@ -19,8 +20,8 @@ export const styles = StyleSheet.create({
     },
     itemName: {
         marginLeft: 10,
-        fontSize: 16,
-        lineHeight: 49,
+        fontSize: RFValue(14),
+        lineHeight: 24,
         fontWeight: '500',
         color: colors.menuItemTextColor
     },

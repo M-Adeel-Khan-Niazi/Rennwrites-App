@@ -1,5 +1,6 @@
 import {StyleSheet} from 'react-native';
 import colors from '../../Config/Colors';
+import { RFValue } from 'react-native-responsive-fontsize';
 
 const styles = StyleSheet.create({
   container: {
@@ -12,7 +13,7 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   itemName: (active) => ({
-    fontSize: 11,
+    fontSize: RFValue(11),
     lineHeight:22,
     textAlign: 'center',
     color: active ? colors.themeOrange : colors.themeBorderColor

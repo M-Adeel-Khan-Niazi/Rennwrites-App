@@ -13,30 +13,32 @@ import { bookList, listTabs } from "../../Assets/MockData";
 import VerticalCards from "../../Components/VerticalCardList";
 import SubscribeCard from "../../Components/SubscribeCard";
 import { navigate, navigationRef } from "../../Navigation/NavigationService";
+import FocusAwareStatusBar from "../../Components/FocusAwareStatusBar";
 
-const Home = ({navigation}) => {
+const Home = ({ navigation }) => {
     const [tabSelected, setTabSelected] = useState(0)
-    return(
+    return (
         <SafeAreaView style={styles.container}>
-            <StatusBar barStyle={'light-content'} backgroundColor={colors.themeOrange} />
+            <FocusAwareStatusBar barStyle={'light-content'} backgroundColor={colors.themeOrange} />
             <View style={styles.headerContainer}>
-                <Header 
+                <Header
                     home={true}
+                    onCartPress={() => navigation.navigate('Cart')}
                     onMenuPress={() => navigation.navigate('SideMenu')}
                 />
-                <ContinueReading />
+                <ContinueReading onViewAll={() => navigation.navigate('BooksList')} />
             </View>
             <ScrollView>
                 <View style={styles.bodyConatainer}>
-                    <ListHeader label={labels.RecommendedForYou} showAll={true} labelStyle={styles.listTitle} />
+                    <ListHeader label={labels.RecommendedForYou} onViewAll={() => navigation.navigate('BooksList')} showAll={true} labelStyle={styles.listTitle} />
                     <HorizontalTabs list={listTabs} selected={tabSelected} />
-                    <HorizontalCards list={bookList} />
-                    <ListHeader label={labels.AudioBooks} showAll={true} labelStyle={styles.listTitle} />
-                    <VerticalCards list={bookList} />
+                    <HorizontalCards list={bookList} onPressCard={() => navigation.navigate('BookDetail', { audio: false, shop: false })} />
+                    <ListHeader label={labels.AudioBooks} onViewAll={() => navigation.navigate('BooksList')} showAll={true} labelStyle={styles.listTitle} />
+                    <VerticalCards list={bookList} onPressCard={() => navigation.navigate('BookDetail', { audio: true, shop: false })} />
                     <SubscribeCard />
-                    <ListHeader label={labels.TrendingBooks} showAll={true} labelStyle={styles.listTitle} />
-                    <HorizontalCards list={bookList} />
-                    </View>
+                    <ListHeader label={labels.TrendingBooks} onViewAll={() => navigation.navigate('BooksList')} showAll={true} labelStyle={styles.listTitle} />
+                    <HorizontalCards list={bookList} onPressCard={() => navigation.navigate('BookDetail', { audio: false, shop: false })} />
+                </View>
             </ScrollView>
         </SafeAreaView>
     )

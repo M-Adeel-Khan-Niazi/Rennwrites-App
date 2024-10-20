@@ -1,6 +1,7 @@
 import { Dimensions, Image, StyleSheet, Text, View } from "react-native"
 import colors from "../../Config/Colors";
 import { PressableOpacity } from "react-native-pressable-opacity";
+import { RFValue } from "react-native-responsive-fontsize";
 
 const ShopCard = ({
     image = null,
@@ -40,13 +41,13 @@ const styles = StyleSheet.create({
     },
     title: {
         color: colors.themeTitleOrangeShade,
-        fontSize: 16,
-        lineHeight: 20,
+        fontSize: RFValue(14),
+        lineHeight: 24,
         fontWeight: '600'
     },
     priceStyle: {
         color: colors.themeOrange,
-        fontSize: 16,
+        fontSize: RFValue(14),
         lineHeight: 20,
         fontWeight: '600'    
     },

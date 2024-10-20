@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from "react-native"
 import labels from "../../Assets/Labels";
 import colors from "../../Config/Colors";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
+import { RFValue } from "react-native-responsive-fontsize";
 const QuantityComponent = ({
     iconContainer = {},
     pagingContainer = {},
@@ -12,16 +13,15 @@ const QuantityComponent = ({
         <View style={[style.container, containerStyle]}>
             <Text style={[style.qtyText, qtyTextStyle]}>{labels.Qty}:</Text>
             <View style={style.pagingButton}>
-
-            <View style={[style.iconContainer, iconContainer]}>
-                <MaterialCommunityIcons name={'minus'} color={colors.white} size={20} />
-            </View>
-            <View style={[style.pagingContainer, pagingContainer]}>
-                <Text style={style.pagingNumber}>{'01'}</Text>
-            </View>
-            <View style={[style.iconContainer, iconContainer]}>
-                <MaterialCommunityIcons name={'plus'} color={colors.white} size={20} />
-            </View>
+                <View style={[style.iconContainer, iconContainer]}>
+                    <MaterialCommunityIcons name={'minus'} color={colors.white} size={20} />
+                </View>
+                <View style={[style.pagingContainer, pagingContainer]}>
+                    <Text style={style.pagingNumber}>{'01'}</Text>
+                </View>
+                <View style={[style.iconContainer, iconContainer]}>
+                    <MaterialCommunityIcons name={'plus'} color={colors.white} size={20} />
+                </View>
             </View>
         </View>
     )
@@ -45,26 +45,26 @@ const style = StyleSheet.create({
     },
     qtyText: {
         color: colors.themeOrange,
-        fontSize: 16,
+        fontSize: RFValue(14),
         // flex: 1,
         lineHeight: 17,
         fontWeight: '500'
     },
     pagingNumber: {
         color: colors.themeOrange,
-        fontSize: 16,
+        fontSize: RFValue(12),
         lineHeight: 17,
         fontWeight: '500'
     },
     iconContainer: {
-        paddingHorizontal: 8,
-        paddingVertical: 8,
+        paddingHorizontal: 6,
+        paddingVertical: 6,
         borderRadius: 11,
         backgroundColor: colors.themeOrange
     },
     pagingContainer: {
         paddingHorizontal: 8,
-        paddingVertical: 11,
+        paddingVertical: 9,
         borderRadius: 11,
         backgroundColor: colors.white
     }

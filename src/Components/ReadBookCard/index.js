@@ -1,6 +1,7 @@
 import { Dimensions, Image, StyleSheet, Text, View } from "react-native"
 import { PressableOpacity } from "react-native-pressable-opacity"
 import colors from "../../Config/Colors";
+import { RFValue } from "react-native-responsive-fontsize";
 
 const ReadBookCard = ({
     onPress = () => {},
@@ -32,16 +33,16 @@ const styles = StyleSheet.create({
         marginTop: 10
     },
     bookTitle: {
-        fontSize: 16,
+        fontSize: RFValue(14),
         color: colors.themeTitleOrangeShade,
         lineHeight: 20,
         fontWeight: '600',
 
     },
     autherText: {
-        fontSize: 12,
+        fontSize: RFValue(12),
         color: colors.playerBackground,
-        lineHeight: 13,
+        lineHeight: 18,
         fontWeight: '600',
         opacity: 0.5
     },
