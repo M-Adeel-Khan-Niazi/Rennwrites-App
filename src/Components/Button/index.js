@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 import colors from '../../Config/Colors';
-import { RFValue } from 'react-native-responsive-fontsize';
+import { fonts } from '../../Assets';
 const Button = ({
     label = '',
     onPress = () => {},
@@ -23,8 +23,10 @@ const style = StyleSheet.create({
         paddingVertical: 18
     },
     labelStyle: {
-        fontSize: RFValue(14),
+        fontSize: 14,
         lineHeight: 20,
+        fontFamily: fonts.SherikaMedium,
+        fontWeight: '500',
         textAlign: 'center',
         color: colors.white
 

@@ -10,7 +10,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import colors from "../../Config/Colors";
 import { PressableOpacity } from "react-native-pressable-opacity";
 import { orderItems } from "../../Assets/MockData";
-const PaymentDetails = ({navigation}) => {
+const PaymentDetails = ({ navigation, route }) => {
     const [collapse, setCollapse] = useState(false)
     return (
         <SafeAreaView style={style.container}>
@@ -29,9 +29,9 @@ const PaymentDetails = ({navigation}) => {
                             <TextInputComp placeholder={labels.MMYY} />
                         </View>
                     </View>
-                    <Button label={labels.PayNow} containerStyle={style.buttonContainer} />
+                    <Button label={labels.PayNow} onPress={() => navigation.navigate('ThankYou')} containerStyle={style.buttonContainer} />
                     <View style={style.orderSummaryContainer}>
-                        <Text style={style.orderSummary}>{labels.OrderSummary}</Text>
+                        <Text style={style.orderSummary}>{route?.params?.from === 'subscription box' ? labels.Subscription : labels.OrderSummary}</Text>
                         <PressableOpacity onPress={() => setCollapse(!collapse)} activeOpacity={0.8} style={style.arrowContainer}>
                             <MaterialCommunityIcons name={collapse ? 'chevron-down' : 'chevron-up'} size={25} color={colors.white} />
                         </PressableOpacity>

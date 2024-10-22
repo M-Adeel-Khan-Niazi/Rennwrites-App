@@ -14,7 +14,11 @@ const colors = {
     menuItemTextColor: '#989190',
     detailTimerColor: '#C9C4C4',
     grayColorPalette: '#3C3C3C',
-    defaultGrayDark: '#565656'
+    defaultGrayDark: '#565656',
+    collapseBackground: '#2C2C2C',
+    monthNameBackground: '#454545',
+    monthNameShadow: '#333131',
+    subscriptionBoxBackground: '#1B1A1A'
   };
   
   export default colors;

@@ -1,9 +1,8 @@
 import React from 'react';
 import { FlatList, Image, StyleSheet, Text, View } from 'react-native';
 import colors from '../../Config/Colors';
-import labels from '../../Assets/Labels';
 import { PressableOpacity } from 'react-native-pressable-opacity';
-import { RFValue } from 'react-native-responsive-fontsize';
+import { fonts } from '../../Assets';
 const HorizontalCards = ({
     list = [],
     onPressCard = () => {}
@@ -13,7 +12,7 @@ const HorizontalCards = ({
             <PressableOpacity onPress={onPressCard} activeOpacity={0.8} key={index} style={style.itemContainer}>
                 <Image source={item.image} style={style.imageStyle} />
                 <View style={style.titleContainer}>
-                    <Text style={style.title}>{item?.title}</Text>
+                    <Text numberOfLines={2} style={style.title}>{item?.title}</Text>
                     <Text style={style.auther}>{item?.auther}</Text>
                 </View>
             </PressableOpacity>
@@ -51,17 +50,20 @@ const style = StyleSheet.create({
         resizeMode: 'cover'
     },
     title: {
-        fontSize: RFValue(14),
+        fontSize: 16,
+        fontFamily: fonts.SherikaBold,
         color: colors.themeTitleOrangeShade,
         lineHeight: 20,
+        width: 150,
         fontWeight: '600'
     },
     titleContainer: {
         marginTop: 10
     },
     auther: {
-        fontSize: RFValue(12),
+        fontSize: 12,
         fontWeight: '300',
+        fontFamily: fonts.SherikaMedium,
         lineHeight: 20,
         color: colors.playerBackground
     }

@@ -2,15 +2,14 @@ import { Image, StyleSheet, Text, View } from "react-native"
 import colors from "../../Config/Colors";
 import labels from "../../Assets/Labels";
 import QuantityComponent from "../QuantityComponent";
-import { RFValue } from "react-native-responsive-fontsize";
-
+import { fonts } from "../../Assets";
 const CartItemCard = ({ item, index }) => {
     return (
         <View key={index} style={style.container}>
             <Image source={item.image} style={style.imageStyle} />
             <View style={style.metaContainer}>
                 <View style={style.titleContainer}>
-                    <Text style={style.title}>{item?.title}</Text>
+                    <Text numberOfLines={2} style={style.title}>{item?.title}</Text>
                     {
                         index ?
                             <View style={style.colorContainer}>
@@ -49,19 +48,20 @@ const style = StyleSheet.create({
         backgroundColor: colors.tabInActiveBackground
     },
     imageStyle: {
-        width: 60,
-        height: 74,
+        width: 80,
+        height: 100,
         resizeMode: 'cover'
     },
     title: {
-        fontSize: RFValue(14),
+        fontSize: 18,
         color: colors.themeTitleOrangeShade,
-        lineHeight: 19,
+        lineHeight: 22,
+        fontFamily: fonts.SherikaBold,
         fontWeight: '600'
     },
     titleContainer: {
         marginLeft: 10,
-
+        flex: 1
         // flexDirection: "row",
         // justifyContent: 'space-between',
         // alignItems: 'center'
@@ -74,7 +74,8 @@ const style = StyleSheet.create({
         alignItems: 'center'
     },
     auther: {
-        fontSize: RFValue(12),
+        fontSize: 12,
+        fontFamily: fonts.SherikaMedium,
         lineHeight: 18,
         fontWeight: '300',
         color: colors.playerBackground
@@ -83,12 +84,14 @@ const style = StyleSheet.create({
         // flexDirection: 'row',
         // alignItems: 'center',
         flexGrow: 1,
+        flex: 1,
         paddingVertical: 5,
         justifyContent: 'space-between'
     },
     priceTag: {
-        fontSize: RFValue(14),
+        fontSize: 16,
         lineHeight: 18,
+        fontFamily: fonts.SherikaBold,
         fontWeight: '600',
         color: colors.themeOrange
     },
@@ -105,13 +108,15 @@ const style = StyleSheet.create({
     },
     priceLabel: {
         color: colors.themeTitleOrangeShade,
-        fontSize: RFValue(16),
+        fontSize: 16,
+        fontFamily: fonts.SherikaBold,
         lineHeight: 32,
         fontWeight: '600'
     },
     sizeText: {
         color: colors.themeBorderColor,
-        fontSize: RFValue(12),
+        fontSize: 12,
+        fontFamily: fonts.SherikaMedium,
         lineHeight: 16,
         fontWeight: '500'
     },

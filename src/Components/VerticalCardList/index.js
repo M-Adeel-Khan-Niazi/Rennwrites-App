@@ -1,11 +1,10 @@
 import React from 'react';
 import { FlatList, Image, StyleSheet, Text, View } from 'react-native';
 import colors from '../../Config/Colors';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import { SvgXml } from 'react-native-svg';
 import { playIcon } from '../../Assets/svgs';
 import { PressableOpacity } from 'react-native-pressable-opacity';
-import { RFValue } from 'react-native-responsive-fontsize';
+import { fonts } from '../../Assets';
 const VerticalCards = ({
     list = [],
     onPressCard = () => {}
@@ -17,7 +16,7 @@ const VerticalCards = ({
                 <View style={style.metaContainer}>
 
                     <View style={style.titleContainer}>
-                        <Text style={style.title}>{item?.title}</Text>
+                        <Text numberOfLines={2} style={style.title}>{item?.title}</Text>
                         <Text style={style.auther}>{item?.auther}</Text>
                     </View>
                     <PressableOpacity activeOpacity={0.8} style={style.playIconContainer}>
@@ -67,17 +66,21 @@ const style = StyleSheet.create({
         resizeMode: 'cover'
     },
     title: {
-        fontSize: RFValue(14),
+        fontSize: 16,
         color: colors.themeTitleOrangeShade,
+        fontFamily: fonts.SherikaBold,
         lineHeight: 20,
+        flexGrow: 1,
         fontWeight: '600'
     },
     titleContainer: {
-        marginLeft: 10
+        marginLeft: 10,
+        flex: 1
     },
     auther: {
-        fontSize: RFValue(12),
+        fontSize: 12,
         lineHeight: 20,
+        fontFamily: fonts.SherikaMedium,
         fontWeight: '300',
         color: colors.playerBackground
     },

@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from "react-native"
 import labels from "../../Assets/Labels";
 import colors from "../../Config/Colors";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
-import { RFValue } from "react-native-responsive-fontsize";
+import { fonts } from "../../Assets";
 const QuantityComponent = ({
     iconContainer = {},
     pagingContainer = {},
@@ -45,15 +45,17 @@ const style = StyleSheet.create({
     },
     qtyText: {
         color: colors.themeOrange,
-        fontSize: RFValue(14),
+        fontFamily: fonts.SherikaMedium,
+        fontSize: 16,
         // flex: 1,
-        lineHeight: 17,
+        lineHeight: 20,
         fontWeight: '500'
     },
     pagingNumber: {
         color: colors.themeOrange,
-        fontSize: RFValue(12),
-        lineHeight: 17,
+        fontFamily: fonts.SherikaMedium,
+        fontSize: 16,
+        lineHeight: 19,
         fontWeight: '500'
     },
     iconContainer: {
@@ -64,7 +66,7 @@ const style = StyleSheet.create({
     },
     pagingContainer: {
         paddingHorizontal: 8,
-        paddingVertical: 9,
+        paddingVertical: 7,
         borderRadius: 11,
         backgroundColor: colors.white
     }

@@ -1,7 +1,7 @@
 import CheckBox from '@react-native-community/checkbox';
 import { StyleSheet, Text, View } from 'react-native';
 import colors from '../../Config/Colors';
-import { RFValue } from 'react-native-responsive-fontsize';
+import { fonts } from '../../Assets';
 const CheckBoxComp = ({
     checked = false,
     setChecked = () => { },
@@ -31,7 +31,8 @@ const style = StyleSheet.create({
         alignItems: 'center'
     },
     labelText: {
-        fontSize: RFValue(12),
+        fontFamily: fonts.SherikaMedium,
+        fontSize: 14,
         lineHeight: 17,
         color: colors.themeTitleOrangeShade
     }

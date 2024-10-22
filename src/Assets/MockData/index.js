@@ -111,3 +111,32 @@ export const orderItems = [
         price: '$20.50'
     }
 ]
+export const AboutUsCollapseList = [
+    {
+        id: 0,
+        title: 'Our Vision',
+        description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+
+    },
+    {
+        id: 1,
+        title: 'Our Mission',
+        description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+        
+    },
+    {
+        id: 2,
+        title: 'Platform for Top Class Audio & e-Books',
+        description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+        
+    }
+]
+export const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+export const subscriptionChecks = [
+    'Nemo enim ipsam voluptatem quia voluptas.',
+'Sit aspernatur aut odit aut fugit, sed quia conseq.',
+'Uuntur magni dolores eos qui ratione voluptate.',
+'Sequi nesciunt. Neque porro quisquam est, qui.',
+'Dolorem ipsum quia dolor sit amet, consectetur.',
+'Ut enim ad minima veniam, quis nostrum exerc.',
+]

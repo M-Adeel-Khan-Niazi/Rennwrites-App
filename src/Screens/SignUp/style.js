@@ -1,6 +1,5 @@
-import { Dimensions, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 import colors from "../../Config/Colors";
-import { RFValue } from "react-native-responsive-fontsize";
 
 export const styles = StyleSheet.create({
     container: {
@@ -10,13 +9,14 @@ export const styles = StyleSheet.create({
     },
     title: {
         color: colors.white,
-        fontSize: RFValue(32),
-        lineHeight: 40
+        fontSize: 32,
+        lineHeight: 40,
+        fontWeight: '600'
     },
     description: {
         color: colors.white,
         marginVertical: 10,
-        fontSize: RFValue(14),
+        fontSize: 14,
         lineHeight: 20
     },
     bodyContainer: {
@@ -38,7 +38,7 @@ export const styles = StyleSheet.create({
         marginTop: 10
     },
     haveAccountText: {
-        fontSize: RFValue(14),
+        fontSize: 14,
         lineHeight: 20,
         textAlign: 'center',
         color: colors.white
@@ -50,7 +50,7 @@ export const styles = StyleSheet.create({
         color: colors.white
     },
     phoneInputStyle: {
-        fontSize: RFValue(14),
+        fontSize: 14,
         lineHeight: 20,
         
 

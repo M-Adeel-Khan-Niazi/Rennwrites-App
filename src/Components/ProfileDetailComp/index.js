@@ -1,8 +1,7 @@
 import { Image, StyleSheet, Text, View } from "react-native"
-import { Assets } from "../../Assets"
+import { Assets, fonts } from "../../Assets"
 import labels from "../../Assets/Labels";
 import colors from "../../Config/Colors";
-import { RFValue } from "react-native-responsive-fontsize";
 
 const ProfileDetailComp = ({
     image = Assets.dummyProfile,
@@ -41,13 +40,16 @@ const style = StyleSheet.create({
 
     },
     nameText: {
-        fontSize: RFValue(18),
-        lineHeight: 26,
+        fontFamily: fonts.SherikaBold,
+        fontSize: 20,
+        lineHeight: 28,
+        fontWeight: '500',
         color: colors.themeTitleOrangeShade
     },
     viewText: {
-        fontSize: RFValue(10),
-        lineHeight: 17,
+        fontSize: 12,
+        fontFamily: fonts.SherikaMedium,
+        lineHeight: 18,
         color: colors.themeTitleOrangeShade
     },
     nameContainer: {

@@ -1,9 +1,9 @@
-import { Dimensions, Image, StyleSheet, Text, View } from "react-native"
+import { Image, StyleSheet, Text, View } from "react-native"
 import { PressableOpacity } from "react-native-pressable-opacity"
 import colors from "../../Config/Colors";
 import { SvgXml } from "react-native-svg";
 import { playIcon } from "../../Assets/svgs";
-import { RFValue } from "react-native-responsive-fontsize";
+import { fonts } from "../../Assets";
 
 const ListenBookCard = ({
     onPress = () => { },
@@ -16,8 +16,8 @@ const ListenBookCard = ({
         <PressableOpacity activeOpacity={0.8} onPress={onPress} key={index} style={styles.containerAudio}>
             <Image source={image} style={styles.audioImageStyle} />
             <View style={styles.metaContainer}>
-                <View>
-                    <Text style={styles.bookTitle}>
+                <View style={styles.nameContainer}>
+                    <Text numberOfLines={2} style={styles.bookTitle}>
                         {title}
                     </Text>
                     <Text style={styles.autherText}>
@@ -55,17 +55,20 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between'
     },
     bookTitle: {
-        fontSize: RFValue(16),
+        fontSize: 16,
+        
         color: colors.themeTitleOrangeShade,
+        fontFamily: fonts.SherikaBold,
         lineHeight: 20,
         fontWeight: '600',
 
     },
     autherText: {
-        fontSize: RFValue(12),
+        fontSize: 12,
         color: colors.playerBackground,
-        lineHeight: 13,
-        fontWeight: '600',
+        lineHeight: 18,
+        fontFamily: fonts.SherikaMedium,
+        fontWeight: '400',
         opacity: 0.5
     },
     playIconContainer: {
@@ -73,4 +76,7 @@ const styles = StyleSheet.create({
         padding: 10,
         borderRadius: 100
     },
+    nameContainer: {
+        flex: 1
+    }
 })

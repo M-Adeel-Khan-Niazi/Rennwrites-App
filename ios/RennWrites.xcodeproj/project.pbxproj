@@ -14,6 +14,36 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-RennWrites-RennWritesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-RennWrites-RennWritesTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		538313034E294F8B9441C3FB /* Sherika Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2CA233246A2E48789B8FB138 /* Sherika Black.otf */; };
+		D119A0F100D441009834A6DC /* Sherika BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8A0683C87A284F21B9206CD7 /* Sherika BlackItalic.otf */; };
+		F84F3D72A30B49E48253A718 /* Sherika Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B9661D044C7A42049670990F /* Sherika Bold.otf */; };
+		AE54A22FA2FD41769F54BA93 /* Sherika BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CEE0418E0E84418B6CAD4B3 /* Sherika BoldItalic.otf */; };
+		7CA53B1E5B2A46EE8FEF4AF5 /* Sherika ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FEEBE2A80F3C4412A7D88DA3 /* Sherika ExtraBold.otf */; };
+		DFBB5FBD208442A58D31B032 /* Sherika ExtraBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A29DCD1EE932487E9703529C /* Sherika ExtraBoldItalic.otf */; };
+		367D5704C0CD4BD785547904 /* Sherika Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 42973A7F473C40FDAE656176 /* Sherika Italic.otf */; };
+		57CC3E13295342FFB974DA93 /* Sherika Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 12072935DAD1416A99EC9E3E /* Sherika Light.otf */; };
+		03E25A0FACD64F5DBBCDB794 /* Sherika LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C73F1322BA714C14AD520726 /* Sherika LightItalic.otf */; };
+		2862F511212943E68FAAB829 /* Sherika Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9DA1626DAC7C47DDB248361E /* Sherika Medium.otf */; };
+		21D529876F9D4B9CA35B4E35 /* Sherika MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 814F4EB261564EB6884C6276 /* Sherika MediumItalic.otf */; };
+		30705677FA89498DB715645E /* Sherika Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A95E4E945DB34756ACC188DE /* Sherika Regular.otf */; };
+		8BABCD7655FE4F6293DBF588 /* Sherika Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 993BB4E1E57F4018A07A5032 /* Sherika Thin.otf */; };
+		5D01102E90914BF89885CB87 /* Sherika ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04DE6856471D4E7A94CA7DD3 /* Sherika ThinItalic.otf */; };
+		00633EDCD652428F869BCECE /* Sherika Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49E2971BB9874A44B9B25E9B /* Sherika Black.ttf */; };
+		828C3B92E1894E7FB55BB6C4 /* Sherika BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33B2C8C8207442A889397A4B /* Sherika BlackItalic.ttf */; };
+		B5187B3BFB1F442E99F156CD /* Sherika Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2709A237ECE743679432A012 /* Sherika Bold.ttf */; };
+		C1C95EA9B77F4CDE9F92C924 /* Sherika BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1475F32AF5AA4AF7A904DE79 /* Sherika BoldItalic.ttf */; };
+		9B071ECABA104031A4BB5114 /* Sherika ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30188E7B576E45B6896B8B6E /* Sherika ExtraBold.ttf */; };
+		0E868A60F3464282AE199541 /* Sherika ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88D4CDBBC88E473786358805 /* Sherika ExtraBoldItalic.ttf */; };
+		3CB06B47BB774C4AB05EC9F7 /* Sherika Italic Variable.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECEE61AC5B3E44F29086D44A /* Sherika Italic Variable.ttf */; };
+		A2FC328B52994A73BF743A6E /* Sherika Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06AD2C071836433FA9D213FB /* Sherika Italic.ttf */; };
+		078E4A408D9C403DA15DA484 /* Sherika Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4014A9457F124FD3AD90A5B3 /* Sherika Light.ttf */; };
+		D6129023E993459C85C6BD03 /* Sherika LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0929FF26F2C4598963DABD8 /* Sherika LightItalic.ttf */; };
+		A87B15C503EB4CB99D78ED4B /* Sherika Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 284115814848446A8968805D /* Sherika Medium.ttf */; };
+		4703B6546B0F4D2AA779E0AE /* Sherika MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 024AE36562FA44E18AD3775F /* Sherika MediumItalic.ttf */; };
+		EC162B665E9D4F979F440002 /* Sherika Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E8B48F461B4259BE5AA6F9 /* Sherika Regular.ttf */; };
+		A1EA125CCA2D4CCCAD11B596 /* Sherika Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E500BA6984BF480F9D162A0E /* Sherika Thin.ttf */; };
+		6DD2CD6FF2254394B8A12DC7 /* Sherika ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BABF80769FDF476CB09D78E8 /* Sherika ThinItalic.ttf */; };
+		06F9CF9E08094769BC5576BC /* Sherika Variable.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E990C74302F47019A0E2279 /* Sherika Variable.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +75,36 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RennWrites/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-RennWrites-RennWritesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RennWrites-RennWritesTests.release.xcconfig"; path = "Target Support Files/Pods-RennWrites-RennWritesTests/Pods-RennWrites-RennWritesTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		2CA233246A2E48789B8FB138 /* Sherika Black.otf */ = {isa = PBXFileReference; name = "Sherika Black.otf"; path = "../src/Assets/Fonts/Sherika Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8A0683C87A284F21B9206CD7 /* Sherika BlackItalic.otf */ = {isa = PBXFileReference; name = "Sherika BlackItalic.otf"; path = "../src/Assets/Fonts/Sherika BlackItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B9661D044C7A42049670990F /* Sherika Bold.otf */ = {isa = PBXFileReference; name = "Sherika Bold.otf"; path = "../src/Assets/Fonts/Sherika Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0CEE0418E0E84418B6CAD4B3 /* Sherika BoldItalic.otf */ = {isa = PBXFileReference; name = "Sherika BoldItalic.otf"; path = "../src/Assets/Fonts/Sherika BoldItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FEEBE2A80F3C4412A7D88DA3 /* Sherika ExtraBold.otf */ = {isa = PBXFileReference; name = "Sherika ExtraBold.otf"; path = "../src/Assets/Fonts/Sherika ExtraBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A29DCD1EE932487E9703529C /* Sherika ExtraBoldItalic.otf */ = {isa = PBXFileReference; name = "Sherika ExtraBoldItalic.otf"; path = "../src/Assets/Fonts/Sherika ExtraBoldItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		42973A7F473C40FDAE656176 /* Sherika Italic.otf */ = {isa = PBXFileReference; name = "Sherika Italic.otf"; path = "../src/Assets/Fonts/Sherika Italic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		12072935DAD1416A99EC9E3E /* Sherika Light.otf */ = {isa = PBXFileReference; name = "Sherika Light.otf"; path = "../src/Assets/Fonts/Sherika Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C73F1322BA714C14AD520726 /* Sherika LightItalic.otf */ = {isa = PBXFileReference; name = "Sherika LightItalic.otf"; path = "../src/Assets/Fonts/Sherika LightItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9DA1626DAC7C47DDB248361E /* Sherika Medium.otf */ = {isa = PBXFileReference; name = "Sherika Medium.otf"; path = "../src/Assets/Fonts/Sherika Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		814F4EB261564EB6884C6276 /* Sherika MediumItalic.otf */ = {isa = PBXFileReference; name = "Sherika MediumItalic.otf"; path = "../src/Assets/Fonts/Sherika MediumItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A95E4E945DB34756ACC188DE /* Sherika Regular.otf */ = {isa = PBXFileReference; name = "Sherika Regular.otf"; path = "../src/Assets/Fonts/Sherika Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		993BB4E1E57F4018A07A5032 /* Sherika Thin.otf */ = {isa = PBXFileReference; name = "Sherika Thin.otf"; path = "../src/Assets/Fonts/Sherika Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		04DE6856471D4E7A94CA7DD3 /* Sherika ThinItalic.otf */ = {isa = PBXFileReference; name = "Sherika ThinItalic.otf"; path = "../src/Assets/Fonts/Sherika ThinItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		49E2971BB9874A44B9B25E9B /* Sherika Black.ttf */ = {isa = PBXFileReference; name = "Sherika Black.ttf"; path = "../src/Assets/Fonts/Sherika Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		33B2C8C8207442A889397A4B /* Sherika BlackItalic.ttf */ = {isa = PBXFileReference; name = "Sherika BlackItalic.ttf"; path = "../src/Assets/Fonts/Sherika BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2709A237ECE743679432A012 /* Sherika Bold.ttf */ = {isa = PBXFileReference; name = "Sherika Bold.ttf"; path = "../src/Assets/Fonts/Sherika Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1475F32AF5AA4AF7A904DE79 /* Sherika BoldItalic.ttf */ = {isa = PBXFileReference; name = "Sherika BoldItalic.ttf"; path = "../src/Assets/Fonts/Sherika BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		30188E7B576E45B6896B8B6E /* Sherika ExtraBold.ttf */ = {isa = PBXFileReference; name = "Sherika ExtraBold.ttf"; path = "../src/Assets/Fonts/Sherika ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		88D4CDBBC88E473786358805 /* Sherika ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "Sherika ExtraBoldItalic.ttf"; path = "../src/Assets/Fonts/Sherika ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ECEE61AC5B3E44F29086D44A /* Sherika Italic Variable.ttf */ = {isa = PBXFileReference; name = "Sherika Italic Variable.ttf"; path = "../src/Assets/Fonts/Sherika Italic Variable.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		06AD2C071836433FA9D213FB /* Sherika Italic.ttf */ = {isa = PBXFileReference; name = "Sherika Italic.ttf"; path = "../src/Assets/Fonts/Sherika Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4014A9457F124FD3AD90A5B3 /* Sherika Light.ttf */ = {isa = PBXFileReference; name = "Sherika Light.ttf"; path = "../src/Assets/Fonts/Sherika Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C0929FF26F2C4598963DABD8 /* Sherika LightItalic.ttf */ = {isa = PBXFileReference; name = "Sherika LightItalic.ttf"; path = "../src/Assets/Fonts/Sherika LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		284115814848446A8968805D /* Sherika Medium.ttf */ = {isa = PBXFileReference; name = "Sherika Medium.ttf"; path = "../src/Assets/Fonts/Sherika Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		024AE36562FA44E18AD3775F /* Sherika MediumItalic.ttf */ = {isa = PBXFileReference; name = "Sherika MediumItalic.ttf"; path = "../src/Assets/Fonts/Sherika MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		71E8B48F461B4259BE5AA6F9 /* Sherika Regular.ttf */ = {isa = PBXFileReference; name = "Sherika Regular.ttf"; path = "../src/Assets/Fonts/Sherika Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E500BA6984BF480F9D162A0E /* Sherika Thin.ttf */ = {isa = PBXFileReference; name = "Sherika Thin.ttf"; path = "../src/Assets/Fonts/Sherika Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BABF80769FDF476CB09D78E8 /* Sherika ThinItalic.ttf */ = {isa = PBXFileReference; name = "Sherika ThinItalic.ttf"; path = "../src/Assets/Fonts/Sherika ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3E990C74302F47019A0E2279 /* Sherika Variable.ttf */ = {isa = PBXFileReference; name = "Sherika Variable.ttf"; path = "../src/Assets/Fonts/Sherika Variable.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +184,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				F8D028830A1640BBAD17247A /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -149,6 +210,44 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		F8D028830A1640BBAD17247A /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				2CA233246A2E48789B8FB138 /* Sherika Black.otf */,
+				8A0683C87A284F21B9206CD7 /* Sherika BlackItalic.otf */,
+				B9661D044C7A42049670990F /* Sherika Bold.otf */,
+				0CEE0418E0E84418B6CAD4B3 /* Sherika BoldItalic.otf */,
+				FEEBE2A80F3C4412A7D88DA3 /* Sherika ExtraBold.otf */,
+				A29DCD1EE932487E9703529C /* Sherika ExtraBoldItalic.otf */,
+				42973A7F473C40FDAE656176 /* Sherika Italic.otf */,
+				12072935DAD1416A99EC9E3E /* Sherika Light.otf */,
+				C73F1322BA714C14AD520726 /* Sherika LightItalic.otf */,
+				9DA1626DAC7C47DDB248361E /* Sherika Medium.otf */,
+				814F4EB261564EB6884C6276 /* Sherika MediumItalic.otf */,
+				A95E4E945DB34756ACC188DE /* Sherika Regular.otf */,
+				993BB4E1E57F4018A07A5032 /* Sherika Thin.otf */,
+				04DE6856471D4E7A94CA7DD3 /* Sherika ThinItalic.otf */,
+				49E2971BB9874A44B9B25E9B /* Sherika Black.ttf */,
+				33B2C8C8207442A889397A4B /* Sherika BlackItalic.ttf */,
+				2709A237ECE743679432A012 /* Sherika Bold.ttf */,
+				1475F32AF5AA4AF7A904DE79 /* Sherika BoldItalic.ttf */,
+				30188E7B576E45B6896B8B6E /* Sherika ExtraBold.ttf */,
+				88D4CDBBC88E473786358805 /* Sherika ExtraBoldItalic.ttf */,
+				ECEE61AC5B3E44F29086D44A /* Sherika Italic Variable.ttf */,
+				06AD2C071836433FA9D213FB /* Sherika Italic.ttf */,
+				4014A9457F124FD3AD90A5B3 /* Sherika Light.ttf */,
+				C0929FF26F2C4598963DABD8 /* Sherika LightItalic.ttf */,
+				284115814848446A8968805D /* Sherika Medium.ttf */,
+				024AE36562FA44E18AD3775F /* Sherika MediumItalic.ttf */,
+				71E8B48F461B4259BE5AA6F9 /* Sherika Regular.ttf */,
+				E500BA6984BF480F9D162A0E /* Sherika Thin.ttf */,
+				BABF80769FDF476CB09D78E8 /* Sherika ThinItalic.ttf */,
+				3E990C74302F47019A0E2279 /* Sherika Variable.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -245,6 +344,36 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				538313034E294F8B9441C3FB /* Sherika Black.otf in Resources */,
+				D119A0F100D441009834A6DC /* Sherika BlackItalic.otf in Resources */,
+				F84F3D72A30B49E48253A718 /* Sherika Bold.otf in Resources */,
+				AE54A22FA2FD41769F54BA93 /* Sherika BoldItalic.otf in Resources */,
+				7CA53B1E5B2A46EE8FEF4AF5 /* Sherika ExtraBold.otf in Resources */,
+				DFBB5FBD208442A58D31B032 /* Sherika ExtraBoldItalic.otf in Resources */,
+				367D5704C0CD4BD785547904 /* Sherika Italic.otf in Resources */,
+				57CC3E13295342FFB974DA93 /* Sherika Light.otf in Resources */,
+				03E25A0FACD64F5DBBCDB794 /* Sherika LightItalic.otf in Resources */,
+				2862F511212943E68FAAB829 /* Sherika Medium.otf in Resources */,
+				21D529876F9D4B9CA35B4E35 /* Sherika MediumItalic.otf in Resources */,
+				30705677FA89498DB715645E /* Sherika Regular.otf in Resources */,
+				8BABCD7655FE4F6293DBF588 /* Sherika Thin.otf in Resources */,
+				5D01102E90914BF89885CB87 /* Sherika ThinItalic.otf in Resources */,
+				00633EDCD652428F869BCECE /* Sherika Black.ttf in Resources */,
+				828C3B92E1894E7FB55BB6C4 /* Sherika BlackItalic.ttf in Resources */,
+				B5187B3BFB1F442E99F156CD /* Sherika Bold.ttf in Resources */,
+				C1C95EA9B77F4CDE9F92C924 /* Sherika BoldItalic.ttf in Resources */,
+				9B071ECABA104031A4BB5114 /* Sherika ExtraBold.ttf in Resources */,
+				0E868A60F3464282AE199541 /* Sherika ExtraBoldItalic.ttf in Resources */,
+				3CB06B47BB774C4AB05EC9F7 /* Sherika Italic Variable.ttf in Resources */,
+				A2FC328B52994A73BF743A6E /* Sherika Italic.ttf in Resources */,
+				078E4A408D9C403DA15DA484 /* Sherika Light.ttf in Resources */,
+				D6129023E993459C85C6BD03 /* Sherika LightItalic.ttf in Resources */,
+				A87B15C503EB4CB99D78ED4B /* Sherika Medium.ttf in Resources */,
+				4703B6546B0F4D2AA779E0AE /* Sherika MediumItalic.ttf in Resources */,
+				EC162B665E9D4F979F440002 /* Sherika Regular.ttf in Resources */,
+				A1EA125CCA2D4CCCAD11B596 /* Sherika Thin.ttf in Resources */,
+				6DD2CD6FF2254394B8A12DC7 /* Sherika ThinItalic.ttf in Resources */,
+				06F9CF9E08094769BC5576BC /* Sherika Variable.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,125 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/Assets/Fonts/Sherika Black.otf",
+      "sha1": "6f1e2010e9112ef017265bb8fb6cc25632a3bb31"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika Black.ttf",
+      "sha1": "9022f1d9451a44b763ed4a326ed3fdc688c813e0"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika BlackItalic.otf",
+      "sha1": "fc742e798845f26ff3715c9a9086f981826e847d"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika BlackItalic.ttf",
+      "sha1": "d1701d09dd9a16c5276e3c7f4147568ddf888839"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika Bold.otf",
+      "sha1": "e6a518196079fc30e08d9c9e3831e9c82a85e094"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika Bold.ttf",
+      "sha1": "bbbd06cefec6fc15986482470f16c842b3186e15"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika BoldItalic.otf",
+      "sha1": "6a26a1002d2a2452c487ef4dbd2d0070f8d9685b"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika BoldItalic.ttf",
+      "sha1": "6aec4580a7b7b6c382fc89f1267c789624cf584d"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika ExtraBold.otf",
+      "sha1": "e3ee4bbe9267a108338d13ad927bb06eb6546524"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika ExtraBold.ttf",
+      "sha1": "15c449ebe90a89eff7bc896213f27832b88bdd1e"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika ExtraBoldItalic.otf",
+      "sha1": "3f1092696500533fe76b671330dbfa98abcaedd2"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika ExtraBoldItalic.ttf",
+      "sha1": "18b53599e215a07f3a0e0a03318a6bc715338b35"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika Italic Variable.ttf",
+      "sha1": "953e0b73e1a5c33c384f16bc22a8db68634e5b6f"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika Italic.otf",
+      "sha1": "6ef0a1ec1f29a472a0ca0006c67ee42381a4b10b"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika Italic.ttf",
+      "sha1": "95d7b362f0bd0e928de3c63eb451035d94447b45"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika Light.otf",
+      "sha1": "cc92f87c0dceef59adb192aae9c12f98f9cd956e"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika Light.ttf",
+      "sha1": "06977494d97435e2bfbe3aeb91767caeea1de1a0"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika LightItalic.otf",
+      "sha1": "62c3d87fc8d9041d46a0ce7f8c7e4f092627622b"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika LightItalic.ttf",
+      "sha1": "6c46f956a3c532dfe275cb7833e7b617f347647c"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika Medium.otf",
+      "sha1": "7888efbe54bcdb2a87e4c5c822e1ed5b6df41ed0"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika Medium.ttf",
+      "sha1": "0754c9a50975f07da701087c24a9a8ce5bcbf4e6"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika MediumItalic.otf",
+      "sha1": "bd5dffc1a6932a3e1cf870518a7c493ddd7818b4"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika MediumItalic.ttf",
+      "sha1": "97fb85cc2ebda00f68161046120d547358692fe4"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika Regular.otf",
+      "sha1": "e64468581d6eee7cfd9c04e039765fc46dc8509d"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika Regular.ttf",
+      "sha1": "6abbd37dc40c2ce6cb727b300d8ef1b3135a55f6"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika Thin.otf",
+      "sha1": "1ffc3d4e91a0baef2f9118793383a8e89e266c0d"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika Thin.ttf",
+      "sha1": "de8eeea96a0200458b89414831a0d8a4ab914202"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika ThinItalic.otf",
+      "sha1": "0ff54cecb534aff71e1d1b33c324eb2a98209e55"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika ThinItalic.ttf",
+      "sha1": "54bf3cb41f51c856f0f9571ae279ec8dce6c2fed"
+    },
+    {
+      "path": "src/Assets/Fonts/Sherika Variable.ttf",
+      "sha1": "f833921f17a97b0ce8aa46ee1330e979bde34bb5"
+    }
+  ]
+}

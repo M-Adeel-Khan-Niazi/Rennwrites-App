@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { StyleSheet } from 'react-native';
 import RadioGroup from 'react-native-radio-buttons-group';
 import colors from '../../Config/Colors';
-import { RFValue } from 'react-native-responsive-fontsize';
+import { fonts } from '../../Assets';
 
 const RadioButtonGroup = ({
     selectedId = null,
@@ -18,6 +18,7 @@ const RadioButtonGroup = ({
             containerStyle={style.contentContainer}  
             labelStyle={style.labelStyle}
             selectedId={selectedId}
+            
         />
     );
 
@@ -25,10 +26,12 @@ const RadioButtonGroup = ({
 export default RadioButtonGroup
 const style = StyleSheet.create({
     contentContainer: {
-        flexDirection: 'row'
+        flexDirection: 'row',
     },
     labelStyle: {
         color: colors.white,
-        fontSize: RFValue(11)
+        fontFamily: fonts.SherikaMedium,
+        fontSize: 10,
+        fontWeight: '400'
     }
 })

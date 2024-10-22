@@ -2,9 +2,8 @@ import React from 'react';
 import { Animated, Dimensions, Image, StyleSheet, Text, View } from 'react-native';
 import colors from '../../Config/Colors';
 import labels from '../../Assets/Labels';
-import { Assets } from '../../Assets';
+import { Assets, fonts } from '../../Assets';
 import ListHeader from '../ListHeader';
-import { RFValue } from 'react-native-responsive-fontsize';
 const ContinueReading = ({
     onViewAll = () => {}
 }) => {
@@ -50,12 +49,15 @@ const style = StyleSheet.create({
         justifyContent: 'space-between',
     },
     titleText: {
-        fontSize: RFValue(14),
-        lineHeight: 24,
+        fontFamily: fonts.SherikaBold,
+        fontSize: 18,
+        lineHeight: 26,
         fontWeight: '600'
     },
     autherName: {
-        fontSize: RFValue(12),
+        fontFamily: fonts.SherikaMedium,
+        fontWeight: '400',
+        fontSize: 12,
         lineHeight: 18,
         color: colors.iconDarkBackground
     },
@@ -76,12 +78,17 @@ const style = StyleSheet.create({
         width: Dimensions.get('screen').width / 1.6
     },
     completedLabel: {
-        fontSize: RFValue(10),
-        lineHeight: 16
+        fontSize: 10,
+        fontFamily: fonts.SherikaMedium,
+        color: colors.iconDarkBackground,
+        lineHeight: 16,
+        fontWeight: '400'
     },
     remainTime: {
-        fontSize: RFValue(10),
+        fontSize: 12,
         lineHeight: 16,
+        fontFamily: fonts.SherikaMedium,
+        fontWeight: '400',
         color: colors.themeRemainTimeBrown
     }
 

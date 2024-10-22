@@ -1,23 +1,23 @@
 import React from "react";
-import { Image, StyleSheet, TextInput, TouchableOpacity, View } from "react-native";
+import { StyleSheet, TextInput, TouchableOpacity, View } from "react-native";
 import colors from "../../Config/Colors";
-import { Assets } from "../../Assets";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
-import { RFValue } from "react-native-responsive-fontsize";
 const TextInputComp = ({
     placeholder = '',
     showEye = false,
     showPassword = false,
     onShowEye = () => { },
-    keyboardType = 'default'
+    keyboardType = 'default',
+    multiline = false
 }) => {
     return (
         <View style={styles.container}>
             <TextInput
                 placeholder={placeholder}
                 keyboardType={keyboardType}
+                multiline={multiline}
                 placeholderTextColor={colors.themeBorderColor}
-                style={styles.textStyle}
+                style={styles.textStyle(multiline)}
                 secureTextEntry={showPassword}
             />
             {
@@ -44,13 +44,14 @@ const styles = StyleSheet.create({
         alignItems: 'center',
 
     },
-    textStyle: {
-        height: 50,
+    textStyle: (multiline) => ({
+        height: multiline ? 120 : 50,
         color: colors.white,
-        fontSize: RFValue(14),
+        fontSize: 14,
+        textAlignVertical: 'top',
         lineHeight: 16,
         flex: 1
-    },
+    }),
     eyeIcon: {
 
     }

@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 import colors from "../../Config/Colors";
-import { RFValue } from "react-native-responsive-fontsize";
+import { fonts } from "../../Assets";
 
 export const style = StyleSheet.create({
     container: {
@@ -16,7 +16,8 @@ export const style = StyleSheet.create({
         marginHorizontal: 20
     },
     titleText: {
-        fontSize: RFValue(18),
+        fontSize: 20,
+        fontFamily: fonts.SherikaBold,
         lineHeight: 26,
         fontWeight: '600',
         color: colors.themeTitleOrangeShade
@@ -37,8 +38,9 @@ export const style = StyleSheet.create({
     },
     orderSummary: {
         color: colors.themeTitleOrangeShade,
-        fontSize: RFValue(18),
-        lineHeight: 26
+        fontSize: 20,
+        fontFamily: fonts.SherikaBold,
+        lineHeight: 32
     },
     arrowContainer: {
         backgroundColor: colors.tabInActiveBackground,
@@ -68,15 +70,17 @@ export const style = StyleSheet.create({
         gap: 10
     },
     quantityText: {
-        fontSize: RFValue(14),
+        fontFamily: fonts.SherikaMedium,
+        fontSize: 14,
         lineHeight: 17,
         fontWeight: '400',
         color: colors.themeBorderColor
     },
     priceText: {
-        fontSize: RFValue(14),
+        fontFamily: fonts.SherikaMedium,
+        fontSize: 14,
         fontWeight: '400',
-        lineHeight: 17,
+        lineHeight: 18,
         color: colors.themeBorderColor
         
     },
@@ -86,19 +90,22 @@ export const style = StyleSheet.create({
         justifyContent: 'space-between'
     },
     totalAmountText: {
-        fontSize: RFValue(14),
+        fontSize: 14,
+        fontFamily: fonts.SherikaMedium,
         lineHeight: 20,
         fontWeight: '500',
         color: colors.themeTitleOrangeShade
     },
     orderSummaryName: {
-        fontSize: RFValue(14),
+        fontSize: 14,
+        fontFamily: fonts.SherikaMedium,
         lineHeight: 20,
         fontWeight: '500',
         color: colors.themeTitleOrangeShade
     },
     totalPriceText: {
-        fontSize: RFValue(14),
+        fontSize: 14,
+        fontFamily: fonts.SherikaMedium,
         lineHeight: 20,
         fontWeight: '500',
         color: colors.themeOrange

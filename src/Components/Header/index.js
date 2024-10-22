@@ -1,13 +1,12 @@
 import React from 'react';
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import colors from '../../Config/Colors';
-import { Assets } from '../../Assets';
+import { Assets, fonts } from '../../Assets';
 import { SvgXml } from 'react-native-svg';
 import { appLogoWhite, burgerIcon, cartIcon, searchIcon } from '../../Assets/svgs';
 import { PressableOpacity } from 'react-native-pressable-opacity';
 import labels from '../../Assets/Labels';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
-import { RFValue } from 'react-native-responsive-fontsize';
 const Header = ({
     onBack = () => { },
     home = false,
@@ -76,7 +75,7 @@ const style = StyleSheet.create({
         alignItems: 'center'
     },
     labelStyle: {
-        fontSize: RFValue(16),
+        fontSize: 16,
         lineHeight: 16,
         textAlign: 'center',
         color: colors.white
@@ -119,19 +118,21 @@ const style = StyleSheet.create({
     },
     backText: {
         color: colors.white,
-        fontSize: RFValue(14),
+        fontSize: 14,
+        fontFamily: fonts.SherikaMedium,
         lineHeight: 17,
         fontWeight: '500'
     },
     titleText: {
         color: colors.themeTitleOrangeShade,
-        fontSize: RFValue(24),
+        fontFamily: fonts.SherikaBold,
+        fontSize: 26,
         lineHeight: 32,
         fontWeight: '600',
         marginLeft: 10
     },
     backIcon: {
-        width: 42,
-        height: 42
+        width: 35,
+        height: 35
     }
 })

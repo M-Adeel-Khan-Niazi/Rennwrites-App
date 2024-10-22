@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from "react-native";
 import Button from "../Button";
 import labels from "../../Assets/Labels";
 import colors from "../../Config/Colors";
-import { RFValue } from "react-native-responsive-fontsize";
+import { fonts } from "../../Assets";
 
 const ProceedCeckoutComp = ({
     onPressProceed = () => {},
@@ -37,21 +37,25 @@ const styles = StyleSheet.create({
         flex: 1
     },
     grandTotal: {
-        fontSize: RFValue(16),
+        fontFamily: fonts.SherikaMedium,
+        fontSize: 16,
         lineHeight: 24,
         color: colors.white,
         fontWeight: '400'
     },
     priceTag: {
-        fontSize: RFValue(18),
-        lineHeight: 24,
+        fontFamily: fonts.SherikaBold,
+        fontSize: 22,
+        lineHeight: 26,
         color: colors.white,
         fontWeight: '600'
     },
     discount:{
+        fontFamily: fonts.SherikaBold,
         color: colors.themeOrange,
-        fontSize: RFValue(12),
+        fontSize: 12,
         lineHeight: 24,
+        fontWeight: '600',
         textDecorationLine: 'line-through'
     },
 })

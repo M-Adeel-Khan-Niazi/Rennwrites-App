@@ -2,7 +2,7 @@ import React from 'react';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
 import colors from '../../Config/Colors';
 import { PressableOpacity } from 'react-native-pressable-opacity';
-import { RFValue } from 'react-native-responsive-fontsize';
+import { fonts } from '../../Assets';
 const HorizontalTabs = ({
     list = [],
     selected = 0,
@@ -38,9 +38,11 @@ const style = StyleSheet.create({
 
     },
     itemLabel: (active) => ({
-        fontSize: RFValue(12),
+        fontSize: 14,
+        fontFamily: fonts.SherikaMedium,
         color: active ? colors.white : colors.themeBorderColor,
-        lineHeight: 18,
+        lineHeight: 20,
+        fontWeight: '500',
         textAlign: 'center'
     }),
     itemContainer: (active) => ({

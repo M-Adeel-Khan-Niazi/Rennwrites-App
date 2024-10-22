@@ -84,7 +84,15 @@ const labels = {
     MMYY: 'MM/YY',
     PayNow: 'Pay Now',
     OrderSummary: "Order Summary",
-    TotalAmount: 'Total Amount'
+    TotalAmount: 'Total Amount',
+    ThankYou: 'Thank you',
+    ThankYouForShopping: "Thank you for Shopping",
+    ContinueShopping: 'Continue Shopping',
+    ThankYouGreetingDesc: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.',
+    LetsCreateProgressTogether: 'Lets Create Progress Together',
+    ContactLocation: 'Contact & Location',
+    SubscriptionBoxIncludes: 'Subscription Box Includes',
+    Subscription: 'Subscription'
   }
 
   export default labels;

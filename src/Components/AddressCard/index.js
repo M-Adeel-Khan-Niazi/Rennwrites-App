@@ -4,7 +4,7 @@ import { SvgXml } from 'react-native-svg';
 import { selectedRadio, unSelectedRadio } from '../../Assets/svgs';
 import colors from '../../Config/Colors';
 import { PressableOpacity } from 'react-native-pressable-opacity';
-import { RFValue } from 'react-native-responsive-fontsize';
+import { fonts } from '../../Assets';
 const AddressDetailCard = ({
     address = null
 }) => {
@@ -45,20 +45,23 @@ const style = StyleSheet.create({
     },
     titleText: {
         color: colors.themeTitleOrangeShade,
-        fontSize: RFValue(12),
+        fontSize: 14,
+        fontFamily: fonts.SherikaMedium,
         lineHeight: 32,
         fontWeight: '500'
     },
     addressText: {
-        fontSize: RFValue(12),
+        fontSize: 14,
+        fontFamily: fonts.SherikaMedium,
         lineHeight: 17,
         fontWeight: '400',
         color: colors.themeBorderColor
     },
     defaultText: {
         marginTop: 10,
-        fontSize: RFValue(12),
-        lineHeight: 17,
+        fontFamily: fonts.SherikaMedium,
+        fontSize: 14,
+        lineHeight: 19,
         fontWeight: '400',
         color: colors.defaultGrayDark
         

@@ -26,14 +26,13 @@
 	<true/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
-	  <!-- Do not change NSAllowsArbitraryLoads to true, or you will risk app rejection! -->
 		<key>NSAllowsArbitraryLoads</key>
 		<false/>
 		<key>NSAllowsLocalNetworking</key>
 		<true/>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -48,5 +47,38 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Sherika Black.otf</string>
+		<string>Sherika BlackItalic.otf</string>
+		<string>Sherika Bold.otf</string>
+		<string>Sherika BoldItalic.otf</string>
+		<string>Sherika ExtraBold.otf</string>
+		<string>Sherika ExtraBoldItalic.otf</string>
+		<string>Sherika Italic.otf</string>
+		<string>Sherika Light.otf</string>
+		<string>Sherika LightItalic.otf</string>
+		<string>Sherika Medium.otf</string>
+		<string>Sherika MediumItalic.otf</string>
+		<string>Sherika Regular.otf</string>
+		<string>Sherika Thin.otf</string>
+		<string>Sherika ThinItalic.otf</string>
+		<string>Sherika Black.ttf</string>
+		<string>Sherika BlackItalic.ttf</string>
+		<string>Sherika Bold.ttf</string>
+		<string>Sherika BoldItalic.ttf</string>
+		<string>Sherika ExtraBold.ttf</string>
+		<string>Sherika ExtraBoldItalic.ttf</string>
+		<string>Sherika Italic Variable.ttf</string>
+		<string>Sherika Italic.ttf</string>
+		<string>Sherika Light.ttf</string>
+		<string>Sherika LightItalic.ttf</string>
+		<string>Sherika Medium.ttf</string>
+		<string>Sherika MediumItalic.ttf</string>
+		<string>Sherika Regular.ttf</string>
+		<string>Sherika Thin.ttf</string>
+		<string>Sherika ThinItalic.ttf</string>
+		<string>Sherika Variable.ttf</string>
+	</array>
 </dict>
 </plist>

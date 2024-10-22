@@ -1,6 +1,5 @@
 import { Dimensions, StyleSheet } from "react-native";
 import colors from "../../../Config/Colors";
-import { RFValue } from "react-native-responsive-fontsize";
 const {width} = Dimensions.get('screen')
 export const styles = StyleSheet.create({
     container: {
@@ -10,13 +9,14 @@ export const styles = StyleSheet.create({
     },
     title: {
         color: colors.white,
-        fontSize: RFValue(32),
+        fontSize: 32,
+        fontWeight: '600',
         lineHeight: 40
     },
     description: {
         color: colors.white,
         marginVertical: 10,
-        fontSize: RFValue(14),
+        fontSize: 14,
         lineHeight: 20
     },
     bodyContainer: {
@@ -32,7 +32,7 @@ export const styles = StyleSheet.create({
         marginTop: 10
     },
     haveAccountText: {
-        fontSize: RFValue(14),
+        fontSize: 14,
         lineHeight: 20,
         // textAlign: 'center',
         color: colors.white
@@ -43,7 +43,7 @@ export const styles = StyleSheet.create({
     pinCodeText: {
         color: colors.white,
         marginVertical: 10,
-        fontSize: RFValue(17),
+        fontSize: 17,
         lineHeight: 20
     },
     pinCodeContainer: {

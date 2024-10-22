@@ -18,7 +18,7 @@ export const profileMenuList = [
         id: 2,
         name: labels.AboutUs,
         icon: aboutUsProfile,
-        navigate: ''
+        navigate: 'AboutUs'
     },
     {
         id: 3,
@@ -36,13 +36,13 @@ export const profileMenuList = [
         id: 5,
         name: labels.SubscriptionBox,
         icon: subscriptionBoxProfile,
-        navigate: ''
+        navigate: 'SubscriptionBox'
     },
     {
         id: 6,
         name: labels.ContactUs,
         icon: contactUsProfile,
-        navigate: ''
+        navigate: 'ContactUs'
     },
     {
         id: 7,

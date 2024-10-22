@@ -1,6 +1,5 @@
 import { Dimensions, StyleSheet } from "react-native";
 import colors from "../../Config/Colors";
-import { RFValue } from "react-native-responsive-fontsize";
 
 export const styles = StyleSheet.create({
     slide: {
@@ -22,20 +21,21 @@ export const styles = StyleSheet.create({
         // backgroundColor: 'red'
     },
     greetingsTitle: {
-        fontSize: RFValue(14),
+        fontSize: 14,
         lineHeight: 20,
         color: colors.themeOrange,
         textAlign: 'center'
     },
     title: {
-        fontSize: RFValue(32),
+        fontSize: 32,
         lineHeight: 40,
         color: colors.themeTitleOrangeShade,
+        fontWeight: '600',
         textAlign: 'center',
         marginVertical: 10
     },
     description: {
-        fontSize: RFValue(14),
+        fontSize: 14,
         lineHeight: 20,
         textAlign: 'center',
         color: colors.white
@@ -80,7 +80,7 @@ export const styles = StyleSheet.create({
         marginBottom: 55
     },
     haveAccountText: {
-        fontSize: RFValue(14),
+        fontSize: 14,
         lineHeight: 20,
         textAlign: 'center',
         color: colors.white

@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 import colors from "../../Config/Colors";
-import { RFValue } from "react-native-responsive-fontsize";
+import { fonts } from "../../Assets";
 
 export const style = StyleSheet.create({
     container: {
@@ -23,8 +23,9 @@ export const style = StyleSheet.create({
         flex: 1
     },
     titleText: {
-        fontSize: RFValue(18),
+        fontSize: 20,
         lineHeight: 26,
+        fontFamily: fonts.SherikaBold,
         fontWeight: '600',
         color: colors.themeTitleOrangeShade
     },
@@ -35,8 +36,9 @@ export const style = StyleSheet.create({
         color: colors.white
     },
     phoneInputStyle: {
-        fontSize: RFValue(14),
+        fontSize: 14,
         lineHeight: 17,
+        fontFamily: fonts.SherikaMedium,
         
         borderWidth: 1,
         borderColor: colors.themeBorderColor,

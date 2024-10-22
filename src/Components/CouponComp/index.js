@@ -2,6 +2,7 @@ import { StyleSheet, TextInput, View } from "react-native"
 import colors from "../../Config/Colors";
 import Button from "../Button";
 import labels from "../../Assets/Labels";
+import { fonts } from "../../Assets";
 
 const CouponComp = () => {
     return (
@@ -30,9 +31,11 @@ const style = StyleSheet.create({
     },
     textInputStyle: {
         flex: 3,
+        fontFamily: fonts.SherikaMedium,
         color: colors.white
     },
     buttonContainer: {
-        flex: 1
-    }
+        flex: 1,
+        paddingVertical: 10
+        }      
 })

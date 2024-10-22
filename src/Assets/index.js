@@ -14,3 +14,21 @@ export const Assets = {
     chatBotGray: require('./Images/chatBotGray.png'),
     shopGray: require('./Images/shopGray.png')
 }
+export const fonts = {
+    SherikaBlack: 'Sherika Black',
+    SherikaBlackItalic: 'Sherika BlackItalic',
+    SherikaBold: 'Sherika Bold',
+    SherikaBoldItalic: 'Sherika BoldItalic',
+    SherikaExtraBold: 'Sherika ExtraBold',
+    SherikaExtraBoldItalic: 'Sherika ExtraBoldItalic',
+    SherikaItalicVariable: 'Sherika Italic Variable',
+    SherikaItalic: 'Sherika Italic',
+    SherikaLight: 'Sherika Light',
+    SherikaLightItalic: 'Sherika LightItalic',
+    SherikaMedium: 'Sherika Medium',
+    SherikaMediumItalic: 'Sherika MediumItalic',
+    SherikaRegular: 'Sherika Regular',
+    SherikaThin: 'Sherika Thin',
+    SherikaThinItalic: 'Sherika ThinItalic',
+    SherikaVariable: 'Sherika Variable',
+}

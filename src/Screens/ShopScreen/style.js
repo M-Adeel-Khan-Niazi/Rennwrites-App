@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 import colors from "../../Config/Colors";
-import { RFValue } from "react-native-responsive-fontsize";
+import { fonts } from "../../Assets";
 
 export const styles = StyleSheet.create({
     container: {
@@ -11,8 +11,10 @@ export const styles = StyleSheet.create({
     },
     RecommendedForYouText: {
         color: colors.themeTitleOrangeShade,
-        fontSize: RFValue(18),
-        lineHeight: 26,
+
+        fontFamily: fonts.SherikaBold,
+        fontSize: 20,
+        lineHeight: 32,
         fontWeight: '600'
     },
     bodyContainer: {

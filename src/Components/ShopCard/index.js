@@ -1,7 +1,7 @@
 import { Dimensions, Image, StyleSheet, Text, View } from "react-native"
 import colors from "../../Config/Colors";
 import { PressableOpacity } from "react-native-pressable-opacity";
-import { RFValue } from "react-native-responsive-fontsize";
+import { fonts } from "../../Assets";
 
 const ShopCard = ({
     image = null,
@@ -11,7 +11,7 @@ const ShopCard = ({
 }) => {
     return (
         <PressableOpacity onPress={onPressCard} activeOpacity={0.8} style={styles.container}>
-            <View>
+            <View style={styles.imageContainer}>
                 <Image source={image} style={styles.imageStyle} />
             </View>
             <Text numberOfLines={2} style={styles.title}>
@@ -33,6 +33,9 @@ const styles = StyleSheet.create({
     container: {
         width: Dimensions.get('screen').width / 2.2,
     },
+    imageContainer: {
+        marginBottom: 10
+    },
     imageStyle: {
         resizeMode: 'cover',
         borderRadius: 8,
@@ -41,13 +44,15 @@ const styles = StyleSheet.create({
     },
     title: {
         color: colors.themeTitleOrangeShade,
-        fontSize: RFValue(14),
-        lineHeight: 24,
+        fontSize: 16,
+        lineHeight: 20,
+        fontFamily: fonts.SherikaBold,
         fontWeight: '600'
     },
     priceStyle: {
         color: colors.themeOrange,
-        fontSize: RFValue(14),
+        fontFamily: fonts.SherikaBold,
+        fontSize: 16,
         lineHeight: 20,
         fontWeight: '600'    
     },

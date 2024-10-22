@@ -2,7 +2,6 @@ import { StyleSheet, Text, View } from "react-native"
 import { PressableOpacity } from "react-native-pressable-opacity"
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import colors from "../../Config/Colors"
-import { RFValue } from "react-native-responsive-fontsize"
 
 const PaginationComp = ({
     list = [],
@@ -49,7 +48,7 @@ const styles = StyleSheet.create({
     }),
     paginationNumberText: (active) => ({
         color: active ? colors.themeOrange : colors.themeBorderColor,
-        fontSize: RFValue(13),
+        fontSize: 13,
         // lineHeight: 16,
         textAlign: 'center',
         // backgroundColor: 'red'

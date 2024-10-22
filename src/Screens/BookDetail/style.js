@@ -1,6 +1,6 @@
 import { Dimensions, StyleSheet } from "react-native";
 import colors from "../../Config/Colors";
-import { RFValue } from "react-native-responsive-fontsize";
+import { fonts } from "../../Assets";
 
 export const styles = StyleSheet.create({
     container: {
@@ -14,16 +14,16 @@ export const styles = StyleSheet.create({
         width: '100%',
     },
     trackImageContainer: {
-        height: Dimensions.get('screen').height/2.2,
+        height: Dimensions.get('screen').height / 2.2,
         alignItems: 'center',
         justifyContent: 'center',
-        position:'relative'
+        position: 'relative'
     },
     trackImageStyle: {
         resizeMode: 'contain',
         // flexGrow: 1,
         width: '50%',
-        height: Dimensions.get('screen').width /1.5
+        height: Dimensions.get('screen').width / 1.5
     },
     barContainer: {
         borderWidth: 1,
@@ -48,20 +48,30 @@ export const styles = StyleSheet.create({
     },
     timerText: {
         color: colors.detailTimerColor,
-        fontSize: RFValue(12),
-        lineHeight: 13,
-        fontWeight: '300'
+        fontSize: 12,
+        fontFamily: fonts.SherikaMedium,
+        lineHeight: 18,
+        fontWeight: '400'
     },
     title: {
         color: colors.themeTitleOrangeShade,
-        fontSize: RFValue(20),
+        fontFamily: fonts.SherikaBold,
+        fontSize: 32,
+        lineHeight: 38,
+        fontWeight: '600'
+    },
+    descTitle: {
+        color: colors.themeTitleOrangeShade,
+        fontFamily: fonts.SherikaBold,
+        fontSize: 20,
         lineHeight: 26,
         fontWeight: '600'
     },
     priceLabel: {
         color: colors.themeTitleOrangeShade,
-        fontSize: RFValue(14),
-        lineHeight: 20,
+        fontFamily: fonts.SherikaBold,
+        fontSize: 20,
+        lineHeight: 28,
         fontWeight: '600'
     },
     priceTag: {
@@ -70,18 +80,22 @@ export const styles = StyleSheet.create({
     priceContainer: {
         flexDirection: 'row',
         gap: 20,
+        alignItems: 'center',
         marginVertical: 10
     },
     descText: {
-        fontSize: RFValue(12),
-        lineHeight: 16,
+        fontFamily: fonts.SherikaMedium,
+        fontSize: 14,
+        lineHeight: 18,
         color: colors.themeTitleOrangeShade,
         opacity: 0.6
     },
     autherLabel: {
-    fontSize: RFValue(14),
-    lineHeight: 21,
-    color: colors.themeOrange    
+        fontSize: 15,
+        fontFamily: fonts.SherikaMedium,
+        lineHeight: 21,
+        fontWeight: '400',
+        color: colors.themeOrange
     },
     autherName: {
         color: colors.themeTitleOrangeShade
@@ -102,7 +116,9 @@ export const styles = StyleSheet.create({
     },
     lfcButtonLabelStyle: {
         color: colors.themeOrange,
-        fontSize: RFValue(16),
+        fontSize: 16,
+        fontFamily: fonts.SherikaMedium,
+        fontWeight: '500',
         lineHeight: 17
     },
     bottonContainer: {
@@ -117,7 +133,7 @@ export const styles = StyleSheet.create({
         position: 'absolute',
         // top: 0,
         bottom: '45%',
-        zIndex:9
+        zIndex: 9
     },
     headerContainer: {
         marginHorizontal: 10
@@ -144,7 +160,8 @@ export const styles = StyleSheet.create({
     },
     productRemainTag: {
         color: colors.themeOrange,
-        fontSize: RFValue(10),
+        fontFamily: fonts.SherikaMedium,
+        fontSize: 12,
         lineHeight: 18,
         fontWeight: '600'
     },
