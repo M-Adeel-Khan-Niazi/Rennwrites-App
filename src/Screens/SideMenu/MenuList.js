@@ -12,7 +12,7 @@ export const profileMenuList = [
         id: 1,
         name: labels.MyAccount,
         icon: myAccountProfile,
-        navigate: ''
+        navigate: 'MyAccount'
     },
     {
         id: 2,

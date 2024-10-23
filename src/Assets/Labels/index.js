@@ -35,6 +35,7 @@ const labels = {
     Back: 'Back',
     ViewProfile: 'View Profile',
     MyAccount: 'My Account', 
+    Account: 'Account',
     AboutUs: 'About Us',
     Shop: 'Shop',
     Books: 'Books',
@@ -92,7 +93,27 @@ const labels = {
     LetsCreateProgressTogether: 'Lets Create Progress Together',
     ContactLocation: 'Contact & Location',
     SubscriptionBoxIncludes: 'Subscription Box Includes',
-    Subscription: 'Subscription'
+    Subscription: 'Subscription',
+    PersonalInfo: 'Personal info',
+    UserDetailsAndPassword: 'User details and password',
+    MyAddress: 'My Address',
+    MyOrder: 'My Order',
+    OrderListingWithDetails: 'Order listing with details',
+    MySubscription: 'My Subscription',
+    SubscriptionDetails: 'Subscription details',
+    MyCardDetails: 'My Card details',
+    Edit: 'Edit',
+    Phone: 'Phone',
+    MyPassword: 'My Password',
+    ChangePassword: 'Change Password',
+    CustomerAccount: 'Customer Account',
+    EditPersonalDetails: 'Edit Personal Details',
+    Name: 'Name',
+    SaveChanges: 'Save Changes',
+    OldPassword: 'Old Password',
+    NewPassword: 'New Password',
+    SavedAddress: 'Saved Address',
+    Save: 'Save'
   }
 
   export default labels;

@@ -3,6 +3,7 @@ import labels from "../../Assets/Labels";
 import BrowseScreen from "../../Screens/Browse";
 import ChatBot from "../../Screens/ChatBot";
 import Home from "../../Screens/Home";
+import MyAccount from "../../Screens/MyAccount";
 import ShopScreen from "../../Screens/ShopScreen";
 
 
@@ -30,5 +31,11 @@ export const tabRoutes = [
         icon: Assets.shopGray,
         name: "ShopScreen",
         component: ShopScreen
+    },
+    {
+        label: labels.Account,
+        icon: Assets.accountIcon,
+        name: "MyAccount",
+        component: MyAccount
     }
 ];

@@ -8,11 +8,13 @@ export const Assets = {
     dummyProfile: require('./Images/dummyProfile.png'),
     shop: require('./Images/shop.png'),
     subscription: require("./Images/subscription.png"), 
+    cardImage: require('./Images/cardImage.png'), 
     // tabs icon
     homeOrange: require('./Images/homeOrange.png'),
     browseGray: require('./Images/browseGray.png'),
     chatBotGray: require('./Images/chatBotGray.png'),
-    shopGray: require('./Images/shopGray.png')
+    shopGray: require('./Images/shopGray.png'),
+    accountIcon: require('./Images/accountIcon.png')
 }
 export const fonts = {
     SherikaBlack: 'Sherika Black',

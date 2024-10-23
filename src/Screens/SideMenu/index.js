@@ -30,7 +30,7 @@ const SideMenu = ({ navigation }) => {
             </View>
             <ScrollView>
                 <View style={styles.bodyContainer}>
-                    <ProfileDetailComp />
+                    <ProfileDetailComp onPress={() => navigation.navigate('MyAccount')} />
                     <FlatList
                         data={profileMenuList}
                         key={'side_'}

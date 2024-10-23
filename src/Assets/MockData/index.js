@@ -92,6 +92,12 @@ export const addressList = [
         title: 'Address 1',
         address: 'Shop# 804, Lorem ipsum, dummy address, vero eos et accusamus, dignissimos, CA',
         defaultText: 'Default Address'
+    },
+    {
+        checked: false,
+        title: 'Address 1',
+        address: 'Shop# 804, Lorem ipsum, dummy address, vero eos et accusamus, dignissimos, CA',
+        defaultText: 'Default Address'
     }
 ]
 export const orderItems = [

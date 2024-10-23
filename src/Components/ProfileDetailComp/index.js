@@ -2,13 +2,15 @@ import { Image, StyleSheet, Text, View } from "react-native"
 import { Assets, fonts } from "../../Assets"
 import labels from "../../Assets/Labels";
 import colors from "../../Config/Colors";
+import { PressableOpacity } from "react-native-pressable-opacity";
 
 const ProfileDetailComp = ({
     image = Assets.dummyProfile,
-    name = 'John Doe'
+    name = 'John Doe',
+    onPress = () => {}
 }) => {
     return (
-        <View style={style.container}>
+        <PressableOpacity onPress={onPress} activeOpacity={0.8} style={style.container}>
             <View style={style.imageContainer}>
                 <Image source={image} style={style.imageStyle} />
             </View>
@@ -16,7 +18,7 @@ const ProfileDetailComp = ({
                 <Text style={style.nameText}>{name}</Text>
                 <Text style={style.viewText}>{labels.ViewProfile}</Text>
             </View>
-        </View>
+        </PressableOpacity>
     )
 }
 export default ProfileDetailComp;

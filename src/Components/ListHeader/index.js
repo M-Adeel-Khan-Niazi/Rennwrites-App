@@ -8,7 +8,9 @@ const ListHeader = ({
     label = '',
     showAll = false,
     labelStyle = {},
-    onViewAll =() => {}
+    onViewAll =() => {},
+    viewAllLabel = labels.ViewAll,
+    viewAllLabelStyle = {}
  }) => {
     return (
             <View style={style.labelContainer}>
@@ -16,7 +18,7 @@ const ListHeader = ({
                 {
                     showAll ? 
                 <PressableOpacity onPress={onViewAll} activeOpacity={0.8} >
-                    <Text style={style.viewAll}>{labels.ViewAll}</Text>
+                    <Text style={[style.viewAll, viewAllLabelStyle]}>{viewAllLabel}</Text>
                 </PressableOpacity>
                     :
                     null

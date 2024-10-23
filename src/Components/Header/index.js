@@ -6,7 +6,8 @@ import { SvgXml } from 'react-native-svg';
 import { appLogoWhite, burgerIcon, cartIcon, searchIcon } from '../../Assets/svgs';
 import { PressableOpacity } from 'react-native-pressable-opacity';
 import labels from '../../Assets/Labels';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
 const Header = ({
     onBack = () => { },
     home = false,
@@ -14,7 +15,11 @@ const Header = ({
     homeBackShow = false,
     title = '',
     contentContainerStyle = {},
-    onCartPress = () => { }
+    onCartPress = () => { },
+    showProfile = false,
+    profileName = '',
+    profileNameBottomLabel = labels.MyAccount,
+    editIconShow = false
 }) => {
     return (
         <View style={contentContainerStyle}>
@@ -61,7 +66,29 @@ const Header = ({
                     :
                     <TouchableOpacity activeOpacity={0.8} onPress={onBack} style={style.container}>
                         <Image source={Assets.backIcon} style={style.backIcon} />
-                        <Text style={style.titleText}>{title}</Text>
+                        {
+                            showProfile ?
+                                <View style={style.profileContainer}>
+                                    <View style={style.imageContainer}>
+                                        <Image source={Assets.dummyProfile} style={style.profileImage} />
+                                        {
+                                            editIconShow ?
+                                            <View style={style.penContainer}>
+                                                <MaterialIcons name='edit' size={15} color={colors.black} />
+                                                </View>
+                                            :
+                                            null
+                                        }
+                                    </View>
+                                    <View>
+                                        <Text style={style.profileNameText}>{profileName}</Text>
+                                        <Text style={style.myAccountLabel}>{profileNameBottomLabel}</Text>
+                                    </View>
+                                </View>
+                                :
+                                <Text style={style.titleText}>{title}</Text>
+
+                        }
                     </TouchableOpacity>
             }
         </View>
@@ -132,7 +159,49 @@ const style = StyleSheet.create({
         marginLeft: 10
     },
     backIcon: {
+        resizeMode: 'contain',
         width: 35,
         height: 35
+    },
+    profileImage: {
+        resizeMode: 'contain',
+        width: 50,
+        height: 50,
+        borderRadius: 100,
+        borderWidth: 1,
+        borderColor: colors.black,
+    },
+    imageContainer: {
+        borderWidth: 1,
+        marginRight: 10,
+        borderColor: colors.themeOrange,
+        borderRadius: 100
+    },
+    profileContainer: {
+        marginLeft: 15,
+        flexDirection: 'row',
+        alignItems: 'center'
+    },
+    myAccountLabel: {
+        fontSize: 14,
+        lineHeight: 18,
+        color: colors.themeOrange,
+        fontFamily: fonts.SherikaMedium,
+        fontWeight: '500'
+    },
+    profileNameText: {
+        fontSize: 26,
+        lineHeight: 32,
+        fontFamily: fonts.SherikaBold,
+        fontWeight: '600',
+        color: colors.themeTitleOrangeShade
+    },
+    penContainer: {
+        backgroundColor: colors.themeOrange,
+        position: 'absolute',
+        borderRadius: 100,
+        padding: 5,
+        bottom: -5,
+        right: -3
     }
 })

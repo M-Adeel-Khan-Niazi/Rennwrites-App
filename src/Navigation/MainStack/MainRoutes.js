@@ -1,12 +1,17 @@
 import AboutUs from "../../Screens/AboutUs";
+import AddNewAddress from "../../Screens/AddNewAddress";
 import BookDetail from "../../Screens/BookDetail";
 import BooksList from "../../Screens/BooksList";
 import Cart from "../../Screens/Cart";
+import ChangePassword from "../../Screens/ChangePassword";
 import Checkout from "../../Screens/Checkout";
 import ContactUs from "../../Screens/ContactUs";
 import CookiePolicy from "../../Screens/CookiePolicy";
+import EditProfile from "../../Screens/EditProfile";
 import PaymentDetails from "../../Screens/PaymentDetails";
 import PrivacyPolicy from "../../Screens/PrivacyPolicy";
+import ProfileDetail from "../../Screens/ProfileDetail";
+import SaveAddressList from "../../Screens/SaveAddressList";
 import ShopScreen from "../../Screens/ShopScreen";
 import SideMenu from "../../Screens/SideMenu";
 import SubscriptionBox from "../../Screens/SubscriptionBox";
@@ -70,5 +75,25 @@ export const mainRoutes = [
     {
         name: 'SubscriptionBox',
         component: SubscriptionBox
+    },
+    {
+        name: 'ProfileDetail',
+        component: ProfileDetail
+    },
+    {
+        name: 'EditProfile',
+        component: EditProfile
+    },
+    {
+        name: 'ChangePassword',
+        component: ChangePassword
+    },
+    {
+        name: 'SaveAddressList',
+        component: SaveAddressList
+    },
+    {
+        name: 'AddNewAddress',
+        component: AddNewAddress
     }
 ];
