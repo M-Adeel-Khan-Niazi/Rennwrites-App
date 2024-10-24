@@ -7,7 +7,6 @@ import { ScrollView, Text, View } from "react-native";
 import SubscribeCard from "../../Components/SubscribeCard";
 import SubscriptionBoxIncludesList from "../../Components/SubscriptionIncludeList";
 import Button from "../../Components/Button";
-import CustomModal from "../../Components/CustomModal";
 import { useState } from "react";
 import CancelSubscriptionModal from "../../Components/ModalList/CancelSubscriptionModal";
 

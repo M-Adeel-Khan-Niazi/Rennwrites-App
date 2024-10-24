@@ -86,6 +86,15 @@ export const shopData = [
         price: '$20.50'
     }
 ]
+
+export const ordersList = [
+    {
+        id: 0,
+        image: Assets.shop,
+        title: 'Order ID: RW321654',
+        price: '$20.50'
+    },
+]
 export const addressList = [
     {
         checked: true,
@@ -102,19 +111,31 @@ export const addressList = [
 ]
 export const orderItems = [
     {
+        image: Assets.shop,
+        title:'RennWrites T-Shirt', 
         name: 'RennWrites T-Shirt',
         quantity: 'X2',
-        price: '$20.50'
+        price: '$20.50',
+        date: '16 Nov 2024',
+        status: 'Completed'
     },
     {
+        image: Assets.shop,
+        title:'RennWrites T-Shirt', 
         name: 'RennWrites T-Shirt',
         quantity: 'X2',
-        price: '$20.50'
+        price: '$20.50',
+        date: '16 Nov 2024',
+        status: 'Completed'
     },
     {
+        image: Assets.shop,
+        title:'RennWrites T-Shirt', 
         name: 'RennWrites T-Shirt',
         quantity: 'X2',
-        price: '$20.50'
+        price: '$20.50',
+        date: '16 Nov 2024',
+        status: 'Completed'
     }
 ]
 export const AboutUsCollapseList = [
@@ -145,4 +166,24 @@ export const subscriptionChecks = [
 'Sequi nesciunt. Neque porro quisquam est, qui.',
 'Dolorem ipsum quia dolor sit amet, consectetur.',
 'Ut enim ad minima veniam, quis nostrum exerc.',
+]
+export const filterMenuList = [
+    'All',
+    'Pending',
+    'Completed',
+    'Incomplete'
+]
+export const creditCardList = [
+    {
+        image: Assets.cardImage,
+        name: 'John Doe',
+        number: '1234 **** ****',
+        checked: true
+    },
+    {
+        image: Assets.cardImage,
+        name: 'John Doe',
+        number: '1234 **** ****',
+        checked: false
+    }
 ]

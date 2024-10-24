@@ -4,27 +4,39 @@ import colors from '../../Config/Colors';
 import labels from '../../Assets/Labels';
 import { PressableOpacity } from 'react-native-pressable-opacity';
 import { fonts } from '../../Assets';
+import PopupMenuComp from '../PopUpMenu';
 const ListHeader = ({
     label = '',
     showAll = false,
     labelStyle = {},
-    onViewAll =() => {},
+    onViewAll = () => { },
     viewAllLabel = labels.ViewAll,
-    viewAllLabelStyle = {}
- }) => {
+    viewAllLabelStyle = {},
+    showMenu = false,
+    menuList = []
+}) => {
     return (
-            <View style={style.labelContainer}>
-                <Text style={[style.labelText, labelStyle]}>{label}</Text>
-                {
-                    showAll ? 
-                <PressableOpacity onPress={onViewAll} activeOpacity={0.8} >
-                    <Text style={[style.viewAll, viewAllLabelStyle]}>{viewAllLabel}</Text>
-                </PressableOpacity>
+        <View style={style.labelContainer}>
+            <Text style={[style.labelText, labelStyle]}>{label}</Text>
+            {
+                showAll ?
+                    <PressableOpacity onPress={onViewAll} activeOpacity={0.8} >
+                        <Text style={[style.viewAll, viewAllLabelStyle]}>{viewAllLabel}</Text>
+                    </PressableOpacity>
                     :
                     null
-                }
-            </View>
-            
+            }
+            {
+                showMenu ?
+                <View style={style.menuContainer}>
+                    <Text style={style.sortText}>{labels.SortByStatus}</Text>
+                    <PopupMenuComp menuList={menuList}/>
+                    </View>
+                :
+                null
+            }
+        </View>
+
     )
 }
 
@@ -52,6 +64,17 @@ const style = StyleSheet.create({
         fontSize: 14,
         lineHeight: 32,
         fontWeight: '500'
+    },
+    sortText: {
+        fontSize: 14,
+        lineHeight: 22,
+        fontFamily: fonts.SherikaMedium,
+        fontWeight: '500',
+        color: colors.themeBorderColor
+    },
+    menuContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 10
     }
-
 })

@@ -1,5 +1,6 @@
 import AboutUs from "../../Screens/AboutUs";
 import AddNewAddress from "../../Screens/AddNewAddress";
+import AddNewCreditCard from "../../Screens/AddNewCard";
 import BookDetail from "../../Screens/BookDetail";
 import BooksList from "../../Screens/BooksList";
 import Cart from "../../Screens/Cart";
@@ -7,7 +8,10 @@ import ChangePassword from "../../Screens/ChangePassword";
 import Checkout from "../../Screens/Checkout";
 import ContactUs from "../../Screens/ContactUs";
 import CookiePolicy from "../../Screens/CookiePolicy";
+import CreditCardDetail from "../../Screens/CreditCardDetail";
 import EditProfile from "../../Screens/EditProfile";
+import MyOrders from "../../Screens/MyOrder";
+import MyOrderDetail from "../../Screens/MyOrderDetail";
 import MySubscription from "../../Screens/MySubscription";
 import PaymentDetails from "../../Screens/PaymentDetails";
 import PrivacyPolicy from "../../Screens/PrivacyPolicy";
@@ -100,5 +104,21 @@ export const mainRoutes = [
     {
         name: 'MySubscription',
         component: MySubscription
+    },
+    {
+        name: 'MyOrders',
+        component: MyOrders
+    },
+    {
+        name: 'MyOrderDetail',
+        component: MyOrderDetail
+    },
+    {
+        name: 'CreditCardDetail',
+        component: CreditCardDetail
+    },
+    {
+        name: 'AddNewCreditCard',
+        component: AddNewCreditCard
     }
 ];

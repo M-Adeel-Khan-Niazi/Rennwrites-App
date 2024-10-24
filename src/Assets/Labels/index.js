@@ -98,6 +98,8 @@ const labels = {
     UserDetailsAndPassword: 'User details and password',
     MyAddress: 'My Address',
     MyOrder: 'My Order',
+    MyOrders: 'My Orders',
+    OrderID: 'Order ID',
     OrderListingWithDetails: 'Order listing with details',
     MySubscription: 'My Subscription',
     SubscriptionDetails: 'Subscription details',
@@ -119,8 +121,12 @@ const labels = {
     CancelSubscription: 'Cancel Subscription',
     Yes: 'Yes',
     No: 'No',
-    AreYouSureYouWantTo: 'Are you sure you want to' 
-    
+    AreYouSureYouWantTo: 'Are you sure you want to', 
+    SortByStatus: 'Sort by Status',
+    CardDetail: 'Card Detail',
+    AddNew: 'Add New',
+    AddNewCard: 'Add New Card',
+    EditCardDetail: 'Edit Card Detail'
   }
 
   export default labels;

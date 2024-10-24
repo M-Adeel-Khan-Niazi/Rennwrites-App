@@ -1,42 +1,89 @@
-import { Image, StyleSheet, Text, View } from "react-native"
+import { Dimensions, Image, StyleSheet, Text, View } from "react-native"
 import colors from "../../Config/Colors";
 import labels from "../../Assets/Labels";
 import QuantityComponent from "../QuantityComponent";
 import { fonts } from "../../Assets";
-const CartItemCard = ({ item, index }) => {
+import { PressableOpacity } from "react-native-pressable-opacity";
+const CartItemCard = ({ item, index, pagination = true, showItemDescription = false, showFooter = true, showColor = true, showAuther = false, showDateStatus = false, onPress = () => { }, bottomRightQtyShow = false }) => {
     return (
-        <View key={index} style={style.container}>
+        <PressableOpacity onPress={onPress} activeOpacity={0.8} key={index} style={style.container}>
             <Image source={item.image} style={style.imageStyle} />
             <View style={style.metaContainer}>
                 <View style={style.titleContainer}>
                     <Text numberOfLines={2} style={style.title}>{item?.title}</Text>
                     {
-                        index ?
+                        showItemDescription ?
+                            <View style={style.detailContainer}>
+                                <View style={style.itemDescriptionFirstRow}>
+                                    <Text style={style.itemDetailText}>{'Total: '+ item.price}</Text>
+                                    <Text style={style.itemDetailText}>{'Status: '+ item.status}</Text>
+                                </View>
+                                <View style={style.itemDescriptionFirstRow}>
+                                    <Text style={style.itemDetailText}>{'Qty: '+ item.quantity}</Text>
+                                    <Text style={style.itemDetailText}>{'Date: '+ item.date}</Text>
+                                </View>
+                            </View>
+                            :
+                            null
+                    }
+                    {
+                        showDateStatus ?
+                            <View style={style.dateContainer}>
+                                <Text style={style.dateText}>{'Date: 16 Nov 2024'}</Text>
+                                <View style={style.divider} />
+                                <Text style={style.dateText}>{'Status: Pending'}</Text>
+                            </View>
+                            :
+                            null
+                    }
+                    {
+                        showColor ?
                             <View style={style.colorContainer}>
                                 <Text style={style.priceLabel}>{labels.Color}:</Text>
                                 <View style={style.paletteContainer}>
                                     <View style={style.colorPalet(colors.themeOrange)} />
                                 </View>
                                 <Text style={style.sizeText}>{'Size: Small'}</Text>
-
                             </View>
                             :
+                            null
+                    }
+                    {
+                        showAuther ?
                             <Text style={style.auther}>{'By Ember Dawn'}</Text>
+                            :
+                            null
                     }
                 </View>
-                <View style={style.priceContainer}>
-                    <Text style={style.priceTag}>{item?.price}</Text>
-                    <View>
-                        <QuantityComponent
-                            iconContainer={style.iconContainer}
-                            pagingContainer={style.pagingContainer}
-                            containerStyle={style.quantityContainerStyle}
-                            qtyTextStyle={style.qtyTextStyle}
-                        />
-                    </View>
-                </View>
+                {
+                    showFooter ?
+                        <View style={style.priceContainer}>
+                            <Text style={style.priceTag}>{item?.price}</Text>
+                            <View>
+                                {
+                                    pagination ?
+                                        <QuantityComponent
+                                            iconContainer={style.iconContainer}
+                                            pagingContainer={style.pagingContainer}
+                                            containerStyle={style.quantityContainerStyle}
+                                            qtyTextStyle={style.qtyTextStyle}
+                                        />
+                                        :
+                                        null
+                                }
+                                {
+                                    bottomRightQtyShow ?
+                                        <Text style={style.qtyText}>{'QTY: 1'}</Text>
+                                        :
+                                        null
+                                }
+                            </View>
+                        </View>
+                        :
+                        null
+                }
             </View>
-        </View>
+        </PressableOpacity>
     )
 }
 export default CartItemCard;
@@ -136,5 +183,44 @@ const style = StyleSheet.create({
     },
     qtyTextStyle: {
         color: colors.white
+    },
+    qtyText: {
+        fontSize: 16,
+        color: colors.themeTitleOrangeShade,
+        lineHeight: 18,
+        fontFamily: fonts.SherikaBold,
+        fontWeight: '600'
+    },
+    dateText: {
+        color: colors.playerBackground,
+        fontSize: 12,
+        lineHeight: 15,
+        fontWeight: '400',
+        fontFamily: fonts.SherikaMedium
+    },
+    divider: {
+        borderLeftWidth: 1,
+        marginHorizontal: 10,
+        height: 10,
+        borderLeftColor: colors.playerBackground
+    },
+    dateContainer: {
+        flexDirection: 'row',
+        alignItems: 'center'
+    },
+    itemDescriptionFirstRow: {
+        flexDirection: 'row',
+        // gap: 20
+        justifyContent: 'space-between'
+    },
+    itemDetailText: {
+        fontSize: 13,
+        lineHeight: 17,
+        color: colors.playerBackground,
+        fontWeight: '400',
+        fontFamily: fonts.SherikaMedium
+    },
+    detailContainer: {
+        width: Dimensions.get('screen').width/1.8
     }
 })
