@@ -8,6 +8,7 @@ import Checkout from "../../Screens/Checkout";
 import ContactUs from "../../Screens/ContactUs";
 import CookiePolicy from "../../Screens/CookiePolicy";
 import EditProfile from "../../Screens/EditProfile";
+import MySubscription from "../../Screens/MySubscription";
 import PaymentDetails from "../../Screens/PaymentDetails";
 import PrivacyPolicy from "../../Screens/PrivacyPolicy";
 import ProfileDetail from "../../Screens/ProfileDetail";
@@ -95,5 +96,9 @@ export const mainRoutes = [
     {
         name: 'AddNewAddress',
         component: AddNewAddress
+    },
+    {
+        name: 'MySubscription',
+        component: MySubscription
     }
 ];

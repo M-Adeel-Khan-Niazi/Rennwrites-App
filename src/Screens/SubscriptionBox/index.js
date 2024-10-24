@@ -11,6 +11,7 @@ import { useState } from "react";
 import { PressableOpacity } from "react-native-pressable-opacity";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import colors from "../../Config/Colors";
+import SubscriptionBoxIncludesList from "../../Components/SubscriptionIncludeList";
 const SubscriptionBox = ({ navigation }) => {
     const [dateSelect, setDateSelect] = useState(false)
     return (
@@ -24,16 +25,7 @@ const SubscriptionBox = ({ navigation }) => {
                     <Text style={styles.subscriptionBoxTitle}>{labels.SubscriptionBoxIncludes}</Text>
                     {
                         dateSelect ?
-                            <View style={styles.checksContainer}>
-                                {
-                                    subscriptionChecks.map(t => (
-                                        <View>
-
-                                            <Text style={styles.checksText}><MaterialCommunityIcons name='check' color={colors.themeTitleOrangeShade} size={15} />{"   "}{t}</Text>
-                                        </View>
-                                    ))
-                                }
-                            </View>
+                        <SubscriptionBoxIncludesList />
                             :
                             <View style={styles.monthsParentContainer}>
                                 {

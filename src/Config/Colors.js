@@ -18,7 +18,8 @@ const colors = {
     collapseBackground: '#2C2C2C',
     monthNameBackground: '#454545',
     monthNameShadow: '#333131',
-    subscriptionBoxBackground: '#1B1A1A'
+    subscriptionBoxBackground: '#1B1A1A',
+    modalFooterBorderColor: '#404040'
   };
   
   export default colors;

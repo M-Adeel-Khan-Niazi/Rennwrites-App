@@ -113,7 +113,14 @@ const labels = {
     OldPassword: 'Old Password',
     NewPassword: 'New Password',
     SavedAddress: 'Saved Address',
-    Save: 'Save'
+    Save: 'Save',
+    RenewalDate: 'Renewal Date',
+    Status: 'Status',
+    CancelSubscription: 'Cancel Subscription',
+    Yes: 'Yes',
+    No: 'No',
+    AreYouSureYouWantTo: 'Are you sure you want to' 
+    
   }
 
   export default labels;

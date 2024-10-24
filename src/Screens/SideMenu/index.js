@@ -2,7 +2,6 @@ import React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { styles } from './style';
 import Header from '../../Components/Header';
-import { navigate } from '../../Navigation/NavigationService';
 import { FlatList, ScrollView, StatusBar, Text, View } from 'react-native';
 import ProfileDetailComp from '../../Components/ProfileDetailComp';
 import { profileMenuList } from './MenuList';

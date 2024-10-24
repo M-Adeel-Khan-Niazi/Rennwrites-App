@@ -72,18 +72,4 @@ export const styles = StyleSheet.create({
     buttonLabel: {
         color: colors.black
     },
-    checksText: {
-        fontSize: 12,
-        lineHeight: 25,
-        
-        fontFamily: fonts.SherikaMedium,
-        fontWeight: '400',
-        color: colors.themeTitleOrangeShade
-    },
-    checksContainer: {
-        backgroundColor: colors.monthNameShadow,
-        padding: 10,
-        borderRadius: 12,
-        marginTop: 20
-    }
 })

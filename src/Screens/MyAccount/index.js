@@ -19,7 +19,7 @@ const MyAccount = ({navigation}) => {
                 <AccountItemFeild onPress={() => navigation.navigate('ProfileDetail')} title={labels.MyAccount} desc={labels.UserDetailsAndPassword} />
                 <AccountItemFeild onPress={() => navigation.navigate('SaveAddressList')} title={labels.MyAddress} desc={'Office # 707, lorem ipsum, dummy address, Chicago, IL'} />
                 <AccountItemFeild title={labels.MyOrder} desc={labels.OrderListingWithDetails} />
-                <AccountItemFeild title={labels.MySubscription} desc={labels.SubscriptionDetails} />
+                <AccountItemFeild onPress={() => navigation.navigate('MySubscription')} title={labels.MySubscription} desc={labels.SubscriptionDetails} />
                 <AccountItemFeild title={labels.MyCardDetails} desc={'**** **** 2345'} cardImage={Assets.cardImage} rightArrowShow={false} />
                 <AccountItemFeild titleDesc={false} logOutIcon={true} title={labels.Logout} />
             </ScrollView>
