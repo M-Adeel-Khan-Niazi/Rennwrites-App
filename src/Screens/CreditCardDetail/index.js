@@ -19,13 +19,13 @@ const CreditCardDetail = ({ navigation }) => {
                 </Text>
                 {
                     creditCardList.map((text, index) => (
-                        <CreditCardComp text={text} index={index} onEditPress={() => navigation.navigate('AddNewCreditCard', {edit: true})} />
+                        <CreditCardComp text={text} index={index} onEditPress={() => navigation.navigate('AddNewCreditCard', { edit: true })} />
                     ))
                 }
-                <Button 
-                label={labels.AddNew}
-                onPress={() => navigation.navigate('AddNewCreditCard')}
-                containerStyle={styles.buttonContainer}
+                <Button
+                    label={labels.AddNew}
+                    onPress={() => navigation.navigate('AddNewCreditCard')}
+                    containerStyle={styles.buttonContainer}
                 />
 
             </ScrollView>

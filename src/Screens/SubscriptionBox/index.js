@@ -5,12 +5,10 @@ import Header from "../../Components/Header";
 import labels from "../../Assets/Labels";
 import SubscribeCard from "../../Components/SubscribeCard";
 import { ScrollView, Text, View } from "react-native";
-import { months, subscriptionChecks } from "../../Assets/MockData";
+import { months} from "../../Assets/MockData";
 import Button from "../../Components/Button";
 import { useState } from "react";
 import { PressableOpacity } from "react-native-pressable-opacity";
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
-import colors from "../../Config/Colors";
 import SubscriptionBoxIncludesList from "../../Components/SubscriptionIncludeList";
 const SubscriptionBox = ({ navigation }) => {
     const [dateSelect, setDateSelect] = useState(false)
@@ -19,13 +17,12 @@ const SubscriptionBox = ({ navigation }) => {
             <FocusAwareStatusBar barStyle={'light-content'} backgroundColor='transparent' />
             <Header onBack={() => dateSelect ? setDateSelect(false) : navigation.goBack()} title={labels.SubscriptionBox} contentContainerStyle={styles.headerContainer} />
             <ScrollView contentContainerStyle={styles.scrollContentContainer}>
-
                 <SubscribeCard buttonShow={false} />
                 <View style={styles.bodyContainer}>
                     <Text style={styles.subscriptionBoxTitle}>{labels.SubscriptionBoxIncludes}</Text>
                     {
                         dateSelect ?
-                        <SubscriptionBoxIncludesList />
+                            <SubscriptionBoxIncludesList />
                             :
                             <View style={styles.monthsParentContainer}>
                                 {
@@ -41,16 +38,16 @@ const SubscriptionBox = ({ navigation }) => {
                     }
                     {
                         dateSelect ?
-                        null
-                        :
-                        <>
-                        <Text style={styles.priceText}>{'Price: $80/ month'}</Text>
-                        <Button
-                            containerStyle={styles.buttonContainer}
-                            label={labels.Subscribe}
-                            onPress={() => navigation.navigate('PaymentDetails', {from: 'subscription box'})}
-                            labelStyle={styles.buttonLabel}
-                            />
+                            null
+                            :
+                            <>
+                                <Text style={styles.priceText}>{'Price: $80/ month'}</Text>
+                                <Button
+                                    containerStyle={styles.buttonContainer}
+                                    label={labels.Subscribe}
+                                    onPress={() => navigation.navigate('PaymentDetails', { from: 'subscription box' })}
+                                    labelStyle={styles.buttonLabel}
+                                />
                             </>
                     }
                 </View>

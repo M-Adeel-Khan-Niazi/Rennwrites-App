@@ -5,11 +5,14 @@ import { crossCircleOrangeIcon } from "../../../Assets/svgs"
 import labels from "../../../Assets/Labels"
 import colors from "../../../Config/Colors"
 import { fonts } from "../../../Assets"
+import { PressableOpacity } from "react-native-pressable-opacity"
 
 const CancelSubscriptionModal = ({
     isVisible = false,
     onYesPress = () => { },
     onNoPress = () => { },
+    leftLabel = labels.Yes,
+    rightLabel = labels.No
 }) => {
     const modalBody = () => {
         return (
@@ -24,12 +27,24 @@ const CancelSubscriptionModal = ({
             </View>
         )
     }
+    const modalFooter = () => {
+        return(
+            <View style={styles.footerContainer}>
+                    <PressableOpacity onPress={onYesPress} activeOpacity={0.8} style={styles.buttonContainer}>
+                        <Text style={styles.ButtonTextStyle}>{leftLabel}</Text>
+                    </PressableOpacity>
+                    <View style={styles.buttonDivider} />
+                    <PressableOpacity onPress={onNoPress} activeOpacity={0.8} style={styles.buttonContainer}>
+                        <Text style={styles.ButtonTextStyle}>{rightLabel}</Text>
+                    </PressableOpacity>
+                </View>
+        )
+    }
     return (
         <CustomModal
             isVisible={isVisible}
             bodyContainer={() => modalBody()}
-            onNoPress={onNoPress}
-            onYesPress={onYesPress}
+            footerComponent={modalFooter}
         />
     )
 }
@@ -57,5 +72,26 @@ const styles = StyleSheet.create({
     },
     titleContainer: {
         marginTop: 20
-    }
+    },
+    footerContainer: {
+        borderTopWidth: 1,
+        borderTopColor: colors.modalFooterBorderColor,
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+    },
+    buttonContainer: {
+        flex: 1,
+        paddingVertical: 10
+    },
+
+    ButtonTextStyle: {
+        color: colors.themeTitleOrangeShade,
+        fontSize: 15,
+        lineHeight: 25,
+        textAlign: 'center'
+    },
+    buttonDivider: {
+        borderLeftColor: colors.modalFooterBorderColor,
+        borderLeftWidth: 1
+    },
 })

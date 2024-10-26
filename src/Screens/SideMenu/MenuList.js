@@ -1,5 +1,5 @@
 import labels from "../../Assets/Labels";
-import { aboutUsProfile, booksProfile, contactUsProfile, homeIconProfile, logoutProfile, myAccountProfile, shopProfile, subscriptionBoxProfile, termConditionProfile } from "../../Assets/svgs";
+import { aboutUsProfile, becomeSellerIcon, booksProfile, contactUsProfile, homeIconProfile, logoutProfile, myAccountProfile, shopProfile, subscriptionBoxProfile, termConditionProfile } from "../../Assets/svgs";
 
 export const profileMenuList = [
     {
@@ -64,6 +64,12 @@ export const profileMenuList = [
     },
     {
         id: 10,
+        name: labels.BecomeASeller,
+        icon: becomeSellerIcon,
+        navigate: ''
+    },
+    {
+        id: 11,
         name: labels.Logout,
         icon: logoutProfile,
         navigate: 'SignIn'

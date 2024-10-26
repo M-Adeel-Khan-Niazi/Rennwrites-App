@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { styles } from './style';
 import Header from '../../Components/Header';
@@ -8,10 +8,23 @@ import { profileMenuList } from './MenuList';
 import { PressableOpacity } from 'react-native-pressable-opacity';
 import { SvgXml } from 'react-native-svg';
 import colors from '../../Config/Colors';
+import ProfileUndergoingModal from '../../Components/ModalList/ProfileUndergoingModal';
 const SideMenu = ({ navigation }) => {
+    const [isSellerModalOpen, setIsSellerModalOpen] = useState(false)
+    const onPressItem = (item) => {
+        if (item.id === 10) {
+            setIsSellerModalOpen(true)
+        } else {
+            navigation.navigate(item?.navigate)
+        }
+    }
+    const onCloseModal = () => {
+        setIsSellerModalOpen(false)
+        navigation.navigate('BecomeASeller')
+    }
     const renderItem = ({ item, index }) => {
         return (
-            <PressableOpacity onPress={() => navigation.navigate(item?.navigate)} key={index} activeOpacity={0.8} style={styles.menuItemContainer}>
+            <PressableOpacity onPress={() => onPressItem(item)} key={index} activeOpacity={0.8} style={styles.menuItemContainer}>
                 <SvgXml xml={item.icon} width={50} height={50} />
                 <Text style={styles.itemName}>{item?.name}</Text>
             </PressableOpacity>
@@ -41,6 +54,11 @@ const SideMenu = ({ navigation }) => {
                     />
                 </View>
             </ScrollView>
+            <ProfileUndergoingModal
+                isVisible={isSellerModalOpen}
+                onBackButtonPress={onCloseModal}
+                onBackdropPress={onCloseModal}
+            />
         </SafeAreaView>
     )
 }

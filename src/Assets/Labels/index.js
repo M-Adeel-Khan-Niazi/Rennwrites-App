@@ -44,6 +44,7 @@ const labels = {
     TermsConditions: 'Terms & Conditions', 
     PrivacyPolicy: "Privacy Policy",
     CookiePolicy: 'Cookie Policy', 
+    BecomeASeller: "Become a Seller",
     Logout: "Logout",
     EBooks: 'E-Books',
     Price: "Price",
@@ -126,7 +127,19 @@ const labels = {
     CardDetail: 'Card Detail',
     AddNew: 'Add New',
     AddNewCard: 'Add New Card',
-    EditCardDetail: 'Edit Card Detail'
+    EditCardDetail: 'Edit Card Detail',
+    YourProfileIsUndergoing : 'Your Profile is undergoing\n',
+    Verification: 'Verification',
+    AfterTheApprovalYouWillPayTheRegistrationFeesOfAccountActivationThroughTheLinkThatWillBeSharedWithTheSellerViaEmail: 'After the approval, You will pay the registration fees of account activation through the link  that will be shared with the seller via email.',
+    ToRegisterAsASellerKindlyProvideTheFollowingDetails: "To register as a seller, Kindly provide the following Details",
+    StoreName: 'Store Name',
+    YourRequestHasBeenSuccessfullySubmitted: 'Your Request has been\n',
+    Successfully: 'Successfully',
+    Submitted: 'Submitted',
+    SuccessfullyApproved: 'Successfully Approved',
+    ProceedToPay: 'Proceed to Pay',
+    MonthSubscriptionFeeToOpenYourStoreOnThePlatform: '3 Month Subscription Fee to open your store on the platform.',
+    RequestApprovedDescription: '3-month subscription fee  i.e.; $289 to have their store on the platform, where they  will create and sell their merchandise along with their  books'
   }
 
   export default labels;

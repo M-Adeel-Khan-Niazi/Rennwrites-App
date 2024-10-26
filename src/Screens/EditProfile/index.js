@@ -35,29 +35,29 @@ const EditProfile = ({ navigation }) => {
                     {labels.Phone}
                 </Text>
                 <PhoneInput
-                            onPressFlag={() => { }}
-                            initialCountry={'us'}
-                            initialValue="13178675309"
-                            offset={10}
-                            textStyle={styles.phoneInputText}
-                            style={styles.phoneInputStyle}
-                            renderFlag={({ imageSource }) => {
-                                return (
-                                    <View style={styles.flagContainer}>
-                                        <Image source={imageSource} width={20} height={20} style={styles.flagImage} />
-                                        <MaterialCommunityIcons name='chevron-down' color={colors.themeBorderColor} size={25} />
-                                    </View>
-                                )
-                            }}
-                            textProps={{
-                                placeholder: 'Enter a phone number...'
-                            }}
-                        />
-                        <Button 
-                        label={labels.SaveChanges}
-                        onPress={() => navigation.goBack()}
-                        containerStyle={styles.buttonContainer}
-                        />
+                    onPressFlag={() => { }}
+                    initialCountry={'us'}
+                    initialValue="13178675309"
+                    offset={10}
+                    textStyle={styles.phoneInputText}
+                    style={styles.phoneInputStyle}
+                    renderFlag={({ imageSource }) => {
+                        return (
+                            <View style={styles.flagContainer}>
+                                <Image source={imageSource} width={20} height={20} style={styles.flagImage} />
+                                <MaterialCommunityIcons name='chevron-down' color={colors.themeBorderColor} size={25} />
+                            </View>
+                        )
+                    }}
+                    textProps={{
+                        placeholder: 'Enter a phone number...'
+                    }}
+                />
+                <Button
+                    label={labels.SaveChanges}
+                    onPress={() => navigation.goBack()}
+                    containerStyle={styles.buttonContainer}
+                />
             </ScrollView>
         </SafeAreaView>
     )

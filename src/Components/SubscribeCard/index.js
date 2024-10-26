@@ -5,13 +5,14 @@ import colors from "../../Config/Colors";
 import Button from "../Button";
 import { Assets, fonts } from "../../Assets";
 const SubscribeCard = ({
-    buttonShow = true
+    buttonShow = true,
+    desc = labels.SubscribeNowForAMonthlyDoseOfWellnessCulturalTreasures
 }) => {
     return (
         <View style={style.container}>
             <ImageBackground source={Assets.subscription} borderRadius={8} >
                 <View style={style.metaContainer}>
-                    <Text style={style.title}>{labels.SubscribeNowForAMonthlyDoseOfWellnessCulturalTreasures}</Text>
+                    <Text style={style.title}>{desc}</Text>
                     {
                         buttonShow ?
                         <Button

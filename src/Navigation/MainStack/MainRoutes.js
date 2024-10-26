@@ -1,6 +1,7 @@
 import AboutUs from "../../Screens/AboutUs";
 import AddNewAddress from "../../Screens/AddNewAddress";
 import AddNewCreditCard from "../../Screens/AddNewCard";
+import BecomeASeller from "../../Screens/BecomeASeller";
 import BookDetail from "../../Screens/BookDetail";
 import BooksList from "../../Screens/BooksList";
 import Cart from "../../Screens/Cart";
@@ -17,6 +18,7 @@ import PaymentDetails from "../../Screens/PaymentDetails";
 import PrivacyPolicy from "../../Screens/PrivacyPolicy";
 import ProfileDetail from "../../Screens/ProfileDetail";
 import SaveAddressList from "../../Screens/SaveAddressList";
+import SellerSubscriptionBox from "../../Screens/SellerSubscriptionBox";
 import ShopScreen from "../../Screens/ShopScreen";
 import SideMenu from "../../Screens/SideMenu";
 import SubscriptionBox from "../../Screens/SubscriptionBox";
@@ -120,5 +122,13 @@ export const mainRoutes = [
     {
         name: 'AddNewCreditCard',
         component: AddNewCreditCard
+    },
+    {
+        name: 'BecomeASeller',
+        component: BecomeASeller
+    },
+    {
+        name: 'SellerSubscriptionBox',
+        component: SellerSubscriptionBox
     }
 ];

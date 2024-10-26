@@ -9,7 +9,6 @@ const SubscriptionBoxIncludesList = () => {
             {
                 subscriptionChecks.map(t => (
                     <View>
-
                         <Text style={styles.checksText}><MaterialCommunityIcons name='check' color={colors.themeTitleOrangeShade} size={15} />{"   "}{t}</Text>
                     </View>
                 ))
@@ -19,7 +18,6 @@ const SubscriptionBoxIncludesList = () => {
 }
 export default SubscriptionBoxIncludesList;
 const styles = StyleSheet.create({
-
     checksText: {
         fontSize: 12,
         lineHeight: 25,
