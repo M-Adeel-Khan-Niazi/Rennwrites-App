@@ -12,9 +12,9 @@ const ReadBookCard = ({
 }) => {
     return(
         <PressableOpacity onPress={onPress} key={index} activeOpacity={0.8} style={styles.itemContainer}>
-                <Image source={image} style={styles.imageStyle} />
+                <Image source={{uri: image}} style={styles.imageStyle} />
                 <View style={styles.nameContainer}>
-                    <Text style={styles.bookTitle}>{title}</Text>
+                    <Text numberOfLines={1} style={styles.bookTitle}>{title}</Text>
                     <Text style={styles.autherText}>{auther}</Text>
                 </View>
             </PressableOpacity>
@@ -24,10 +24,13 @@ export default ReadBookCard;
 const styles = StyleSheet.create({
     itemContainer: {
         // flexDirection: 'row'
+        flexGrow: 0,
+        width: Dimensions.get('screen').width / 2.2
     },
     imageStyle: {
+        resizeMode: 'contain',
         width: Dimensions.get('screen').width / 2.2,
-        height: Dimensions.get('screen').width / 1.8
+        height: Dimensions.get('screen').width / 1.5
     },
     nameContainer: {
         marginTop: 10

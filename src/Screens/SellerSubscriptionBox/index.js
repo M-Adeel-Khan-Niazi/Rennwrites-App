@@ -25,6 +25,7 @@ const SellerSubscriptionBox = ({ navigation }) => {
                     <Button
                         containerStyle={styles.buttonContainer}
                         label={labels.Subscribe}
+                        onPress={() => navigation.navigate('SellerTabStack')}
                         labelStyle={styles.buttonLabel}
                     />
                 </View>

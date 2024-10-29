@@ -10,6 +10,7 @@ import Checkout from "../../Screens/Checkout";
 import ContactUs from "../../Screens/ContactUs";
 import CookiePolicy from "../../Screens/CookiePolicy";
 import CreditCardDetail from "../../Screens/CreditCardDetail";
+import CustomerAndOrders from "../../Screens/CustomerAndOrders";
 import EditProfile from "../../Screens/EditProfile";
 import MyOrders from "../../Screens/MyOrder";
 import MyOrderDetail from "../../Screens/MyOrderDetail";
@@ -130,5 +131,9 @@ export const mainRoutes = [
     {
         name: 'SellerSubscriptionBox',
         component: SellerSubscriptionBox
+    },
+    {
+        name: 'CustomerAndOrders',
+        component: CustomerAndOrders
     }
 ];

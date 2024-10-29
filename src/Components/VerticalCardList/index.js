@@ -12,7 +12,7 @@ const VerticalCards = ({
     const renderItem = ({ item, index }) => {
         return (
             <PressableOpacity activeOpacity={0.8} onPress={onPressCard} key={index} style={style.itemContainer}>
-                <Image source={item.image} style={style.imageStyle} />
+                <Image source={{uri: item.image}} style={style.imageStyle} />
                 <View style={style.metaContainer}>
 
                     <View style={style.titleContainer}>

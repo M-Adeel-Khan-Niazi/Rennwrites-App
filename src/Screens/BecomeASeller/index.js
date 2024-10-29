@@ -22,7 +22,6 @@ const BecomeASeller = ({ navigation }) => {
         setTimeout(() => {
             setIsApprovedSuccessModal(true)
         }, 500);
-
     }
     return (
         <SafeAreaView style={styles.container}>

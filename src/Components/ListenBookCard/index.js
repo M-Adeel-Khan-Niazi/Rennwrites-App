@@ -14,7 +14,7 @@ const ListenBookCard = ({
 }) => {
     return (
         <PressableOpacity activeOpacity={0.8} onPress={onPress} key={index} style={styles.containerAudio}>
-            <Image source={image} style={styles.audioImageStyle} />
+            <Image source={{uri: image}} style={styles.audioImageStyle} />
             <View style={styles.metaContainer}>
                 <View style={styles.nameContainer}>
                     <Text numberOfLines={2} style={styles.bookTitle}>

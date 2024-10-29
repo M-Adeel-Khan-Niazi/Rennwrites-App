@@ -37,20 +37,26 @@ export const BooksFilterList = [
 export const bookList = [
     {
         id: 0,
-        image: Assets.trackImage,
-        title: 'The Alchemy of Soul',
-        auther: 'By Mychael T Renn'
+        image: 'https://m.media-amazon.com/images/I/81oKg5eh2wL._SL1500_.jpg',
+        title: 'The Alchemy Of Vision: Exploring The Depths of Heaven and Hell With William Blake and Neville Goddard',
+        price: '$20.50',
+        auther: 'Mychael T. Renn',
+        topSeller: true
     },
     {
-        image: Assets.trackImage,
+        image: 'https://m.media-amazon.com/images/I/61iwH6+qsPL._SL1499_.jpg',
         id: 1,
-        title: 'The Alchemy of Soul',
-        auther: 'By Mychael T Renn'
+        title: 'NAILED IT!!: A metaphysical translation of Bible parables',
+        price: '$20.50',
+        topSeller: true,
+        auther: 'Mychael T. Renn'
     },
     {
         id: 2,
-        image: Assets.trackImage,
-        title: 'The Alchemy of Soul',
+        image: 'https://m.media-amazon.com/images/I/71i7biq-haL._SL1500_.jpg',
+        title: 'Imagining Divinity: God as Our Human Imagination',
+        price: '$20.50',
+        topSeller: true,
         auther: 'By Mychael T Renn'
     }
 ]
@@ -186,4 +192,31 @@ export const creditCardList = [
         number: '1234 **** ****',
         checked: false
     }
+]
+export const orderTable = [
+    {
+        id: 'RW321654',
+        qty: '01',
+        price: '$20.50',
+        status: 'Completed'
+    },
+    {
+        id: 'RW321654',
+        qty: '01',
+        price: '$20.50',
+        status: 'Completed'
+    },
+
+    {
+        id: 'RW321654',
+        qty: '01',
+        price: '$20.50',
+        status: 'Completed'
+    },
+    {
+        id: 'RW321654',
+        qty: '01',
+        price: '$20.50',
+        status: 'Completed'
+    },
 ]

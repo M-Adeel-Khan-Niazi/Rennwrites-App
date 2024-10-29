@@ -1,6 +1,7 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { mainRoutes } from "./MainRoutes";
 import TabStack from "../TabStack/TabStack";
+import SellerTabStack from "../SellerTabStack/SellerTabStack";
 
 const Main = createNativeStackNavigator();
 
@@ -9,8 +10,13 @@ const MainStack = () => {
     return (
         <Main.Navigator
             options={{ headerShown: false }}
-            initialRouteName={'TabStack'}
-            >
+            // initialRouteName={'TabStack'}
+        >
+            <Main.Screen
+                options={{ headerShown: false }}
+                name={"SellerTabStack"}
+                component={SellerTabStack}
+            />
             <Main.Screen
                 options={{ headerShown: false }}
                 name={"TabStack"}

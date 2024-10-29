@@ -14,7 +14,8 @@ export const Assets = {
     browseGray: require('./Images/browseGray.png'),
     chatBotGray: require('./Images/chatBotGray.png'),
     shopGray: require('./Images/shopGray.png'),
-    accountIcon: require('./Images/accountIcon.png')
+    accountIcon: require('./Images/accountIcon.png'),
+    inventoryIcon: require('./Images/inventoryIcon.png')
 }
 export const fonts = {
     SherikaBlack: 'Sherika Black',

@@ -4,12 +4,13 @@ import { styles } from './style';
 import Header from '../../Components/Header';
 import { FlatList, ScrollView, StatusBar, Text, View } from 'react-native';
 import ProfileDetailComp from '../../Components/ProfileDetailComp';
-import { profileMenuList } from './MenuList';
+import { profileMenuList, sellerProfileMenuList } from './MenuList';
 import { PressableOpacity } from 'react-native-pressable-opacity';
 import { SvgXml } from 'react-native-svg';
 import colors from '../../Config/Colors';
 import ProfileUndergoingModal from '../../Components/ModalList/ProfileUndergoingModal';
-const SideMenu = ({ navigation }) => {
+const SideMenu = ({ navigation, route }) => {
+    console.log(navigation, route?.params)
     const [isSellerModalOpen, setIsSellerModalOpen] = useState(false)
     const onPressItem = (item) => {
         if (item.id === 10) {
@@ -44,7 +45,7 @@ const SideMenu = ({ navigation }) => {
                 <View style={styles.bodyContainer}>
                     <ProfileDetailComp onPress={() => navigation.navigate('MyAccount')} />
                     <FlatList
-                        data={profileMenuList}
+                        data={route?.params?.seller ? sellerProfileMenuList : profileMenuList}
                         key={'side_'}
                         keyExtractor={item => "side_" + item?.id}
                         scrollEnabled={false}

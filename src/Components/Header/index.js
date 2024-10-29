@@ -19,17 +19,50 @@ const Header = ({
     showProfile = false,
     profileName = '',
     profileNameBottomLabel = labels.MyAccount,
-    editIconShow = false
+    editIconShow = false,
+    showAppLogoLeft = true,
+    showProfileDetail = false,
+    profileNameTextStyle = {},
+    myAccountLabelStyle = {},
+    showCartIcon = true,
+    showSearchIcon = true
 }) => {
     return (
         <View style={contentContainerStyle}>
             {
                 home ?
                     <View style={style.headerContainer}>
-                        <SvgXml
-                            xml={appLogoWhite}
-                            width={180}
-                        />
+                        {
+                            showAppLogoLeft ?
+                            <SvgXml
+                                xml={appLogoWhite}
+                                width={180}
+                            />
+                            :
+                            null
+                        }
+                        {
+                            showProfileDetail ?
+                            <View style={style.profileContainer}>
+                            <View style={style.imageContainer}>
+                                <Image source={Assets.dummyProfile} style={style.profileImage} />
+                                {
+                                    editIconShow ?
+                                    <View style={style.penContainer}>
+                                        <MaterialIcons name='edit' size={15} color={colors.black} />
+                                        </View>
+                                    :
+                                    null
+                                }
+                            </View>
+                            <View>
+                                <Text style={[style.profileNameText, profileNameTextStyle]}>{profileName}</Text>
+                                <Text style={[style.myAccountLabel, myAccountLabelStyle]}>{profileNameBottomLabel}</Text>
+                            </View>
+                        </View>
+                            :
+                            null
+                        }
                         {
                             homeBackShow ?
                                 <PressableOpacity onPress={onBack} activeOpacity={0.8} style={style.backButtonContainer}>
@@ -38,6 +71,8 @@ const Header = ({
                                 </PressableOpacity>
                                 :
                                 <View style={style.rightIconsContainer}>
+                                    {
+                                        showSearchIcon ? 
                                     <View style={style.iconContainer}>
                                         <SvgXml
                                             xml={searchIcon}
@@ -45,6 +80,11 @@ const Header = ({
                                             height={20}
                                         />
                                     </View>
+                                        :
+                                        null
+                                    }
+                                    {
+                                        showCartIcon ?
                                     <PressableOpacity activeOpacity={0.8} onPress={onCartPress} style={[style.iconContainer, style.cartContainer]}>
                                         <SvgXml
                                             xml={cartIcon}
@@ -53,6 +93,10 @@ const Header = ({
                                         />
                                         <View style={style.dot} />
                                     </PressableOpacity>
+                                        :
+                                        null
+                                    }
+                                    
                                     <PressableOpacity onPress={onMenuPress} activeOpacity={0.8} style={style.iconContainer}>
                                         <SvgXml
                                             xml={burgerIcon}

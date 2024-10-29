@@ -1,5 +1,5 @@
 import labels from "../../Assets/Labels";
-import { aboutUsProfile, becomeSellerIcon, booksProfile, contactUsProfile, homeIconProfile, logoutProfile, myAccountProfile, shopProfile, subscriptionBoxProfile, termConditionProfile } from "../../Assets/svgs";
+import { aboutUsProfile, becomeSellerIcon, booksProfile, contactUsProfile, customerAndOrderProfile, homeIconProfile, logoutProfile, myAccountProfile, productInventoryProfile, shopProfile, subscriptionBoxProfile, termConditionProfile } from "../../Assets/svgs";
 
 export const profileMenuList = [
     {
@@ -74,4 +74,42 @@ export const profileMenuList = [
         icon: logoutProfile,
         navigate: 'SignIn'
     }
+]
+export const sellerProfileMenuList = [
+    {
+        id: 0,
+        name: labels.Home,
+        icon: homeIconProfile,
+        navigate: ''
+    },
+    {
+        id: 1,
+        name: labels.CustomersOrders,
+        icon: customerAndOrderProfile,
+        navigate: 'CustomerAndOrders'
+    },
+    {
+        id: 2,
+        name: labels.ProductInventory,
+        icon: productInventoryProfile,
+        navigate: ''
+    },
+    {
+        id: 3,
+        name: labels.ManageBooks,
+        icon: shopProfile,
+        navigate: ''
+    },
+    {
+        id: 4,
+        name: labels.ManageShipment,
+        icon: booksProfile,
+        navigate: ''
+    },
+    {
+        id: 5,
+        name: labels.Logout,
+        icon: logoutProfile,
+        navigate: 'SignIn'
+    },
 ]

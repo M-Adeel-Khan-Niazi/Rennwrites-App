@@ -13,10 +13,11 @@ const ListHeader = ({
     viewAllLabel = labels.ViewAll,
     viewAllLabelStyle = {},
     showMenu = false,
-    menuList = []
+    menuList = [],
+    contentContainerStyle = {}
 }) => {
     return (
-        <View style={style.labelContainer}>
+        <View style={[style.labelContainer, contentContainerStyle]}>
             <Text style={[style.labelText, labelStyle]}>{label}</Text>
             {
                 showAll ?
@@ -49,7 +50,7 @@ const style = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        marginVertical: 10
+        marginVertical: 10,
     },
     labelText: {
         color: colors.white,

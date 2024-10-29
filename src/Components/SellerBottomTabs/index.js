@@ -3,11 +3,11 @@ import { Image, Text, View } from 'react-native';
 import styles from './style';
 import { PressableOpacity } from 'react-native-pressable-opacity';
 import colors from '../../Config/Colors';
-import { tabRoutes } from '../../Navigation/TabStack/TabRoutes';
-const routes = tabRoutes;
-const BottomTab = ({ navigation, state }) => {
+import { sellerTabRoutes } from '../../Navigation/SellerTabStack/SellerTabRoutes';
+const routes = sellerTabRoutes;
+const SellerBottomTab = ({ navigation, state }) => {
   const SelectTab = item => {
-    navigation.navigate('TabStack', {
+    navigation.navigate('SellerTabStack', {
       screen: item.name,
     });
   };
@@ -15,7 +15,7 @@ const BottomTab = ({ navigation, state }) => {
     <View style={styles.container}>
       {
         routes?.map((text, index) => {
-          let isFocused = 'Home';
+          let isFocused = 'SellerHome';
           if (index == state.index) {
             isFocused = text.name;
           } else {
@@ -33,4 +33,4 @@ const BottomTab = ({ navigation, state }) => {
   );
 };
 
-export default BottomTab;
+export default SellerBottomTab;

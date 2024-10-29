@@ -10,7 +10,7 @@ const HorizontalCards = ({
     const renderItem = ({ item, index }) => {
         return (
             <PressableOpacity onPress={onPressCard} activeOpacity={0.8} key={index} style={style.itemContainer}>
-                <Image source={item.image} style={style.imageStyle} />
+                <Image source={{uri: item.image}} style={style.imageStyle} />
                 <View style={style.titleContainer}>
                     <Text numberOfLines={2} style={style.title}>{item?.title}</Text>
                     <Text style={style.auther}>{item?.auther}</Text>

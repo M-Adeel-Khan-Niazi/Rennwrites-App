@@ -139,7 +139,18 @@ const labels = {
     SuccessfullyApproved: 'Successfully Approved',
     ProceedToPay: 'Proceed to Pay',
     MonthSubscriptionFeeToOpenYourStoreOnThePlatform: '3 Month Subscription Fee to open your store on the platform.',
-    RequestApprovedDescription: '3-month subscription fee  i.e.; $289 to have their store on the platform, where they  will create and sell their merchandise along with their  books'
+    RequestApprovedDescription: '3-month subscription fee  i.e.; $289 to have their store on the platform, where they  will create and sell their merchandise along with their  books',
+    Inventory: 'Inventory',
+    OrdersSummary: 'Orders Summary',
+    Shipped: 'Shipped',
+    Cancelled: 'Cancelled',
+    Pending: 'Pending',
+    TopSeller: 'Top Seller',
+    RecentOrders: 'Recent Orders',
+    CustomersOrders: 'Customers & Orders',
+    ProductInventory:'Product Inventory',
+ManageBooks:'Manage Books',
+ManageShipment:'Manage Shipment',
   }
 
   export default labels;
