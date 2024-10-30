@@ -19,6 +19,9 @@ import PaymentDetails from "../../Screens/PaymentDetails";
 import PrivacyPolicy from "../../Screens/PrivacyPolicy";
 import ProfileDetail from "../../Screens/ProfileDetail";
 import SaveAddressList from "../../Screens/SaveAddressList";
+import SellerBooks from "../../Screens/SellerBooks";
+import SellerInventory from "../../Screens/SellerInventory";
+import SellerManageShipment from "../../Screens/SellerManageShipment";
 import SellerSubscriptionBox from "../../Screens/SellerSubscriptionBox";
 import ShopScreen from "../../Screens/ShopScreen";
 import SideMenu from "../../Screens/SideMenu";
@@ -135,5 +138,17 @@ export const mainRoutes = [
     {
         name: 'CustomerAndOrders',
         component: CustomerAndOrders
+    },
+    {
+        name: 'SellerInventory',
+        component: SellerInventory
+    },
+    {
+        name: 'SellerManageShipment',
+        component: SellerManageShipment
+    },
+    {
+        name: 'SellerBooks',
+        component: SellerBooks
     }
 ];

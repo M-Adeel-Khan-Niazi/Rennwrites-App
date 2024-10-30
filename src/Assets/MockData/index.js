@@ -41,7 +41,9 @@ export const bookList = [
         title: 'The Alchemy Of Vision: Exploring The Depths of Heaven and Hell With William Blake and Neville Goddard',
         price: '$20.50',
         auther: 'Mychael T. Renn',
-        topSeller: true
+        topSeller: true,
+        OrderID: '1008',
+        time: '50:59'
     },
     {
         image: 'https://m.media-amazon.com/images/I/61iwH6+qsPL._SL1499_.jpg',
@@ -49,7 +51,9 @@ export const bookList = [
         title: 'NAILED IT!!: A metaphysical translation of Bible parables',
         price: '$20.50',
         topSeller: true,
-        auther: 'Mychael T. Renn'
+        auther: 'Mychael T. Renn',
+        OrderID: '1008',
+        time: '50:59'
     },
     {
         id: 2,
@@ -57,7 +61,9 @@ export const bookList = [
         title: 'Imagining Divinity: God as Our Human Imagination',
         price: '$20.50',
         topSeller: true,
-        auther: 'By Mychael T Renn'
+        OrderID: '1008',
+        auther: 'By Mychael T Renn',
+        time: '50:59'
     }
 ]
 export const shopData = [
@@ -123,7 +129,10 @@ export const orderItems = [
         quantity: 'X2',
         price: '$20.50',
         date: '16 Nov 2024',
-        status: 'Completed'
+        status: 'Completed',
+        sold: '10',
+        orderID: '1008',
+        qtyAvailable: '50'
     },
     {
         image: Assets.shop,
@@ -132,7 +141,10 @@ export const orderItems = [
         quantity: 'X2',
         price: '$20.50',
         date: '16 Nov 2024',
-        status: 'Completed'
+        status: 'Completed',
+        sold: '10',
+        orderID: '1008',
+        qtyAvailable: '50'
     },
     {
         image: Assets.shop,
@@ -141,7 +153,10 @@ export const orderItems = [
         quantity: 'X2',
         price: '$20.50',
         date: '16 Nov 2024',
-        status: 'Completed'
+        status: 'Completed',
+        sold: '10',
+        orderID: '1008',
+        qtyAvailable: '50'
     }
 ]
 export const AboutUsCollapseList = [

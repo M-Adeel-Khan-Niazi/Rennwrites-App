@@ -92,19 +92,19 @@ export const sellerProfileMenuList = [
         id: 2,
         name: labels.ProductInventory,
         icon: productInventoryProfile,
-        navigate: ''
+        navigate: 'SellerInventory'
     },
     {
         id: 3,
         name: labels.ManageBooks,
         icon: shopProfile,
-        navigate: ''
+        navigate: 'SellerBooks'
     },
     {
         id: 4,
         name: labels.ManageShipment,
         icon: booksProfile,
-        navigate: ''
+        navigate: 'SellerManageShipment'
     },
     {
         id: 5,
